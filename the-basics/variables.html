@@ -2,9 +2,9 @@
 <h2 id="definition">Definition</h2>
 <p>A variable can hold a value. Variables are by default immutable to prevent from changing the value. If you want to change the value later you can declare the variable as mutable with <code>mut</code></p>
 <p>The syntatic structure of a variable definition:</p>
-<pre><code class="language-ebnf">&lt;name&gt; ::= [a-zA-Z_][a-zA-Z0-9_]+
-&lt;expression&gt; ::= &lt;literal&gt; | ...
-&lt;variable_declaration&gt; ::= &quot;let&quot; &quot;mut&quot;? &lt;name&gt; (&quot;:&quot; &lt;typename&gt;)? = &lt;expression&gt; &quot;;&quot;
+<pre><code class="language-ebnf">&lt;<span class="token rule">name</span>> ::<span class="token operator">=</span> <span class="token punctuation">[</span><span class="token rule">a</span><span class="token operator">-</span><span class="token rule">zA</span><span class="token operator">-</span><span class="token rule">Z_</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token rule">a</span><span class="token operator">-</span><span class="token rule">zA</span><span class="token operator">-</span><span class="token rule">Z0</span><span class="token operator">-</span>9_<span class="token punctuation">]</span>+
+&lt;<span class="token rule">expression</span>> ::<span class="token operator">=</span> &lt;<span class="token rule">literal</span>> <span class="token operator">|</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
+&lt;<span class="token rule">variable_declaration</span>> ::<span class="token operator">=</span> <span class="token string">"let"</span> <span class="token string">"mut"</span><span class="token special class-name">? &lt;name> (":" &lt;typename>)?</span> <span class="token operator">=</span> &lt;<span class="token rule">expression</span>> <span class="token string">";"</span>
 </code></pre>
 <p>Sample of a variable definition:</p>
 <pre><code class="language-back"><span class="token keyword">let</span> age = <span class="token number">42</span>;
@@ -19,7 +19,7 @@
 <h2 id="assignments">Assignments</h2>
 <p>You can only assign mutable variables. If you try to change an immutable variable the compiler throws an error.</p>
 <p>The syntactic structure of assignments:</p>
-<pre><code class="language-ebnf">&lt;assignment&gt; ::= &lt;name&gt; &quot;=&quot; &lt;expression&gt; &quot;;&quot;
+<pre><code class="language-ebnf">&lt;<span class="token rule">assignment</span>> ::<span class="token operator">=</span> &lt;<span class="token rule">name</span>> <span class="token string">"="</span> &lt;<span class="token rule">expression</span>> <span class="token string">";"</span>
 </code></pre>
 <p>A simple example:</p>
 <pre><code class="language-back"><span class="token keyword">let</span> <span class="token keyword">mut</span> day = <span class="token string">"Monday"</span>;

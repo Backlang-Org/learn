@@ -3,8 +3,8 @@
 <h2 id="declaring-structs">Declaring structs</h2>
 <p>A struct is something like a wrapper for different values. It is a valuetype and allocated on the stack (.Net, it can differe for other backends). A struct can only have values. A struct is always immutable. </p>
 <p>The syntactic structure of a struct:</p>
-<pre><code class="language-ebnf">&lt;struct_value&gt; ::= &quot;let&quot; &lt;name&gt; &quot;:&quot; &lt;typename&gt; &quot;;&quot;
-&lt;struct_declaration&gt; ::= &lt;modifier&gt;? &quot;struct&quot; &lt;name&gt; &quot;{&quot; &lt;struct_value&gt;* &quot;}&quot;
+<pre><code class="language-ebnf">&lt;<span class="token rule">struct_value</span>> ::<span class="token operator">=</span> <span class="token string">"let"</span> &lt;<span class="token rule">name</span>> <span class="token string">":"</span> &lt;<span class="token rule">typename</span>> <span class="token string">";"</span>
+&lt;<span class="token rule">struct_declaration</span>> ::<span class="token operator">=</span> &lt;<span class="token rule">modifier</span>>? <span class="token string">"struct"</span> &lt;<span class="token rule">name</span>> <span class="token string">"{"</span> &lt;<span class="token rule">struct_value</span>><span class="token operator">*</span> <span class="token string">"}"</span>
 </code></pre>
 <p>Because of the immutability the struct generates an automatic constructor to init all values at allocation.</p>
 <p>A simple example:</p>

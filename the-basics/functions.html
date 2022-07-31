@@ -1,9 +1,9 @@
 <h1 id="functions">Functions</h1>
 <p>A piece of code can be combined as function. Functions can expect parameters and can return a value. The simplest function is the <code>println</code> function to print a message to the outputstream (for example the console).</p>
 <p>The syntactic structure:</p>
-<pre><code class="language-ebnf">&lt;parameter&gt; ::= &lt;name&gt; &quot;:&quot; &lt;typename&gt; (&quot;=&quot; &lt;expression&gt;)?
-&lt;parameter_list&gt; ::= &lt;parameter&gt; || &lt;parameter&gt; &quot;,&quot; &lt;parameter_list&gt;
-&lt;function_definition&gt; ::= &lt;modifier&gt;? &quot;func&quot; &lt;name&gt; &quot;(&quot; &lt;parameter_list&gt;* &quot;)&quot; (&quot;-&gt;&quot; &lt;typename&gt;)? &quot;{&quot; &lt;body&gt; &quot;}&quot;
+<pre><code class="language-ebnf">&lt;<span class="token rule">parameter</span>> ::<span class="token operator">=</span> &lt;<span class="token rule">name</span>> <span class="token string">":"</span> &lt;<span class="token rule">typename</span>> <span class="token punctuation">(</span><span class="token string">"="</span> &lt;<span class="token rule">expression</span>><span class="token punctuation">)</span>?
+&lt;<span class="token rule">parameter_list</span>> ::<span class="token operator">=</span> &lt;<span class="token rule">parameter</span>> <span class="token operator">|</span><span class="token operator">|</span> &lt;<span class="token rule">parameter</span>> <span class="token string">","</span> &lt;<span class="token rule">parameter_list</span>>
+&lt;<span class="token rule">function_definition</span>> ::<span class="token operator">=</span> &lt;<span class="token rule">modifier</span>><span class="token special class-name">? "func" &lt;name> "(" &lt;parameter_list>* ")" ("->" &lt;typename>)?</span> <span class="token string">"{"</span> &lt;<span class="token rule">body</span>> <span class="token string">"}"</span>
 </code></pre>
 <p>A quick example:</p>
 <pre><code class="language-back"><span class="token keyword">func</span> printHello() {
