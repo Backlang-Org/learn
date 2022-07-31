@@ -2,8 +2,11 @@ import * as path from "node:path";
 import * as fs from "node:fs";
 import { marked } from "marked";
 import pkg from "prismjs";
-import { deepStrictEqual } from "node:assert";
+import ebnf from "prismjs/components/prism-ebnf.js";
+import bash from "prismjs/components/prism-bash.js";
 const { highlight, languages } = pkg;
+
+const otherUsedLanguages = [ebnf, bash];
 
 var markdownFiles;
 var renderedHtml;
@@ -52,6 +55,11 @@ function GetAllMarkdownFiles() {
 /* STEP 2 */
 
 function RenderMarkdownFiles() {
+  var autoloader = Prism.plugins.autoloader;
+  if (autoloader) {
+    autoloader.loadLanguages("ebnf");
+  }
+
   languages["back"] = {
     comment: {
       pattern: /\/\/.*|\/\*[\s\S]*?(?:\*\/|$)/,
