@@ -1,0 +1,13 @@
+<h1 id="custom-plugins">Custom Plugins</h1>
+<p>To create a plugin create a new dotnet assembly that targets min. Dotnet 7 and install Backlang.Contracts from nuget. You can make your plugin visible to the backlang manager by packing your assembly as nuget package with the tags <code>backlang</code> and <code>plugin</code> and publish it on nuget.</p>
+<h2 id="a-custom-backend">A custom Backend</h2>
+<p>To make a backend visible to the compiler you have to export it with the <code>Export</code> annotation on your backend class that implements the <code>ICompilationTarget</code> interface. </p>
+<p>Here is a simple example:</p>
+<pre><code class="language-back"><span class="token keyword">import</span> Backlang.Contracts;
+
+@Export(typeof(ICompilation<span class="token annotation punctuation">Target)</span>)
+<span class="token keyword">public</span> <span class="token keyword">class</span> CustomBackend : ICompilationTarget {
+
+}
+</code></pre>
+<p>The <code>ICompilationTarget</code> interface provides some methods to initialize the typesystem for your backend and your intrinsics, if you support it. To generate code you have to implement the <code>ITargetAssembly</code> interface and return it by the <code>Compile</code> method. This assembly is the actual code generator. </p>
