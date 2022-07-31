@@ -1,0 +1,8 @@
+<h1 id="the-syntax-tree">The Syntax Tree</h1>
+<p>The syntax tree consists of flexible nodes called LNodes. The structure is like <a href="https://en.wikipedia.org/wiki/S-expression">s-expressions</a>. A node has a target, arguments and attributes.</p>
+<p>Calling Conventions of Targets:</p>
+<p>&#39; is an operator, for example: <code>1 + 2</code>
+    <code>        &#39;+(1, 2)    </code></p>
+<p># is a keyword, for example: <code>while true {}</code>
+    <code>    #while(#Boolean(true), &#39;{})    </code></p>
+<p>Literals are automaticly typed by the parser. A type is a call and a literal node as argument. So the number <code>42</code> will be treated as <code>#Int32(42)</code>. Modifiers like <code>public</code> are attributes on a node.</p>

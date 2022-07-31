@@ -1,0 +1,45 @@
+<h2 id="switch-statements">Switch Statements</h2>
+<p>Our Switch Statements got a lot of rework from normal switch statements you see in other languages.
+Normal features from the switch statement behave as expected</p>
+<pre><code class="language-back"><span class="token keyword">switch</span> element {
+    <span class="token keyword">case</span> value: { print(<span class="token string">"its the value"</span>); <span class="token keyword">break</span>; }
+    <span class="token keyword">default</span>: print(<span class="token string">"its not the value :c"</span>);
+}
+</code></pre>
+<p>The example is great for one of our new features. Do you see how annoying it is that we had to use curly braces just because we need a break?
+For these things, we can just type break before our case like so</p>
+<pre><code class="language-back"><span class="token keyword">switch</span> element {
+    <span class="token keyword">break</span> <span class="token keyword">case</span> value: print(<span class="token string">"its the value"</span>);
+    <span class="token keyword">default</span>: print(<span class="token string">"its not the value :c"</span>);
+}
+</code></pre>
+<p>But look! What if we want an <code>if</code> clause after the first <code>case</code> so that it only gets executed when the first <code>case</code> failed and couldn&#39;t break.
+Yeah, <em>normally</em> we would end the <code>switch</code>, then make the <code>if</code> statement and then put the <code>default</code> code in the <code>else</code> branch. But doesn&#39;t that sound complicated? Yes, cause it is! In Back, you can just put <code>if</code> statements into a <code>switch</code> statement and also break in them like so</p>
+<pre><code class="language-back"><span class="token keyword">switch</span> element {
+    <span class="token keyword">break</span> <span class="token keyword">case</span> value: print(<span class="token string">"its the value"</span>);
+    <span class="token keyword">break</span> <span class="token keyword">if</span> myFunction(element): print(<span class="token string">"my function likes it :D"</span>);
+    <span class="token keyword">default</span>: print(<span class="token string">"its not the value :c"</span>);
+}
+</code></pre>
+<p>Ok, but we got even more to show you. For example, you can check <strong>two values</strong> in one <code>case</code> by just typing</p>
+<pre><code class="language-back"><span class="token keyword">switch</span> element {
+    <span class="token keyword">break</span> <span class="token keyword">case</span> value: print(<span class="token string">"its the value"</span>);
+    <span class="token keyword">break</span> <span class="token keyword">if</span> myFunction(element): print(<span class="token string">"my function likes it :D"</span>);
+    <span class="token keyword">break</span> <span class="token keyword">case</span> value1 || value2: print(<span class="token string">"its one of those values"</span>);
+    <span class="token keyword">default</span>: print(<span class="token string">"its not the value :c"</span>);
+}
+</code></pre>
+<p>But what&#39;s when you want to check a method of the element? And the element changes? For example <code>switch (getRandomUUID()) { /*...*/ }</code>
+Of course we have a solution for that! The <code>when</code> keyword</p>
+<pre><code class="language-back"><span class="token keyword">switch</span> element {
+    <span class="token keyword">break</span> <span class="token keyword">case</span> value: print(<span class="token string">"its the value"</span>);
+    <span class="token keyword">break</span> <span class="token keyword">if</span> myFunction(element): print(<span class="token string">"my function likes it :D"</span>);
+    <span class="token keyword">break</span> <span class="token keyword">case</span> value1 || value2: print(<span class="token string">"its one of those values"</span>);
+    <span class="token keyword">when</span> >= <span class="token number">17</span>: {
+        print(<span class="token string">"element is greater or equal to 17."</span>);
+        <span class="token keyword">break</span>;
+    }
+    <span class="token keyword">break</span> <span class="token keyword">when</span> isCool(): print(<span class="token string">"converts to if element.isCool()"</span>);
+    <span class="token keyword">default</span>: print(<span class="token string">"its not the value :c"</span>);
+}
+</code></pre>

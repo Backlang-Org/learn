@@ -1,0 +1,24 @@
+<h1 id="working-with-data">Working With Data</h1>
+<h2 id="structs">Structs</h2>
+<h2 id="declaring-structs">Declaring structs</h2>
+<p>A struct is something like a wrapper for different values. It is a valuetype and allocated on the stack (.Net, it can differe for other backends). A struct can only have values. A struct is always immutable. </p>
+<p>The syntactic structure of a struct:</p>
+<pre><code class="language-ebnf">&lt;struct_value&gt; ::= &quot;let&quot; &lt;name&gt; &quot;:&quot; &lt;typename&gt; &quot;;&quot;
+&lt;struct_declaration&gt; ::= &lt;modifier&gt;? &quot;struct&quot; &lt;name&gt; &quot;{&quot; &lt;struct_value&gt;* &quot;}&quot;
+</code></pre>
+<p>Because of the immutability the struct generates an automatic constructor to init all values at allocation.</p>
+<p>A simple example:</p>
+<pre><code class="language-back"><span class="token keyword">public</span> <span class="token keyword">struct</span> Point {
+    <span class="token keyword">let</span> X : <span class="token keyword">i32</span>;
+    <span class="token keyword">let</span> Y : <span class="token keyword">i32</span>;
+}
+</code></pre>
+<h2 id="working-with-structs">Working with structs</h2>
+<p>To create an instance of a struct you have to call the constructor. </p>
+<pre><code class="language-back"><span class="token keyword">let</span> p = Point::new(<span class="token number">5</span>, <span class="token number">8</span>);
+</code></pre>
+<p>The code above creates a new instance of the struct <code>Point</code> and calls the constructor to initialize the field <code>X</code> with 5 and the field <code>Y</code> with 8.</p>
+<p>To pass a specific field to a function for example you can use the <code>.</code>-operator.</p>
+<pre><code class="language-back">print(p.X);
+print(p.Y);
+</code></pre>

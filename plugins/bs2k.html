@@ -1,0 +1,167 @@
+<h1 id="bs2k">Bs2K</h1>
+<h2 id="intrinsics">Intrinsics</h2>
+<pre><code class="language-back"><span class="token keyword">inline</span>(bs2k) {
+    copy(R1, <span class="token number">1</span>);
+    label(<span class="token string">"loop"</span>);
+        copy(R2, <span class="token number">64</span>);
+        add(R1, R2, R3);
+        push(R3)
+        call(std::put_char(<span class="token keyword">char</span>));
+        jump(<span class="token string">"loop"</span>);
+}
+</code></pre>
+<table>
+<thead>
+<tr>
+<th>Intrinsic</th>
+<th>Explanation</th>
+<th>Example</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>copy</td>
+<td>Copy Value</td>
+<td><pre><code class="language-back">copy(r0, 42);</code></pre></td>
+</tr>
+<tr>
+<td>jump</td>
+<td>Jump to register or label</td>
+<td><pre><code class="language-back">jump(r0);</code></pre></td>
+</tr>
+<tr>
+<td>jump_eq</td>
+<td>Jump to register or label when equals</td>
+<td><pre><code class="language-back">jump(r0, r2);</code></pre></td>
+</tr>
+<tr>
+<td>jump_neq</td>
+<td>Jump to register or label when not equals</td>
+<td><pre><code class="language-back">jump(r0, r2);</code></pre></td>
+</tr>
+<tr>
+<td>jump_gt</td>
+<td>Jump to register or label when greather than</td>
+<td><pre><code class="language-back">jump(cool_label, r2);</code></pre></td>
+</tr>
+<tr>
+<td>jump_ge</td>
+<td>Jump to register or label when greater equals</td>
+<td><pre><code class="language-back">jump(r0, r2);</code></pre></td>
+</tr>
+<tr>
+<td>jump_lt</td>
+<td>Jump to register or label when less than</td>
+<td><pre><code class="language-back">jump(r0, r2);</code></pre></td>
+</tr>
+<tr>
+<td>jump_le</td>
+<td>Jump to register or label when less equals</td>
+<td><pre><code class="language-back">jump(my_label_3, r2);</code></pre></td>
+</tr>
+<tr>
+<td>push</td>
+<td>Push Value To Stack</td>
+<td><pre><code class="language-back">push(r0);</code></pre></td>
+</tr>
+<tr>
+<td>pop</td>
+<td>Pop Value From Stack</td>
+<td><pre><code class="language-back">pop(r1);</code></pre></td>
+</tr>
+<tr>
+<td>ret</td>
+<td>Return From Function</td>
+<td><pre><code class="language-back">ret();</code></pre></td>
+</tr>
+<tr>
+<td>noop</td>
+<td>Do Nothing</td>
+<td><pre><code class="language-back">noop();</code></pre></td>
+</tr>
+<tr>
+<td>halt</td>
+<td>Stop Clock</td>
+<td><pre><code class="language-back">halt();</code></pre></td>
+</tr>
+<tr>
+<td>add</td>
+<td>Adds values from two registers and stores</td>
+<td><pre><code class="language-back">add(r1, r2, r3);</code></pre></td>
+</tr>
+<tr>
+<td>sub</td>
+<td>Subtracts values from two registers and stores</td>
+<td><pre><code class="language-back">sub(r1, r2, r3);</code></pre></td>
+</tr>
+<tr>
+<td>mult</td>
+<td>Multiplies values from two registers and stores in two registers</td>
+<td><pre><code class="language-back">mult(r1, r2, r4, r3);</code></pre></td>
+</tr>
+<tr>
+<td>divmod</td>
+<td>Divides values from two registers and stores amount and remainder</td>
+<td><pre><code class="language-back">divmod(r1, r2, r3, r4);</code></pre></td>
+</tr>
+<tr>
+<td>and</td>
+<td></td>
+<td><pre><code class="language-back">and(r1, r2, r3);</code></pre></td>
+</tr>
+<tr>
+<td>or</td>
+<td></td>
+<td><pre><code class="language-back">or(r1, r2, r3);</code></pre></td>
+</tr>
+<tr>
+<td>comp</td>
+<td>Compares two values from registers</td>
+<td><pre><code class="language-back">comp(r1, r2, r3);</code></pre></td>
+</tr>
+<tr>
+<td>comp_eq</td>
+<td>Compares two values from registers (equals)</td>
+<td><pre><code class="language-back">comp_eq(r1, r2, r3);</code></pre></td>
+</tr>
+<tr>
+<td>comp_neq</td>
+<td>Compares two values from registers (not equals)</td>
+<td><pre><code class="language-back">comp_neq(r1, r2, r3);</code></pre></td>
+</tr>
+<tr>
+<td>comp_gt</td>
+<td>Compares two values from registers (greater than)</td>
+<td><pre><code class="language-back">comp_gt(r1, r2, r3);</code></pre></td>
+</tr>
+<tr>
+<td>comp_ge</td>
+<td>Compares two values from registers (greater equals)</td>
+<td><pre><code class="language-back">comp_ge(r1, r2, r3);</code></pre></td>
+</tr>
+<tr>
+<td>comp_lt</td>
+<td>Compares two values from registers (less than)</td>
+<td><pre><code class="language-back">comp_lt(r1, r2, r3);</code></pre></td>
+</tr>
+<tr>
+<td>comp_le</td>
+<td>Compares two values from registers (less equals)</td>
+<td><pre><code class="language-back">comp_le(r1, r2, r3);</code></pre></td>
+</tr>
+<tr>
+<td>get_key_state</td>
+<td>Get Current Key State</td>
+<td><pre><code class="language-back">get_key_state(r2, r3);</code></pre></td>
+</tr>
+<tr>
+<td>poll_time</td>
+<td>Get Current Time</td>
+<td><pre><code class="language-back">poll_time(r4, r5);</code></pre></td>
+</tr>
+<tr>
+<td>swap_framebuffers</td>
+<td>Swap Framebuffers</td>
+<td><pre><code class="language-back">swap_framebuffers();</code></pre></td>
+</tr>
+</tbody></table>
+<p>Find More On <a href="https://github.com/Backseating-Committee-2k/BackseatSafeSystem2k/blob/main/src/opcodes.rs#L332">Github</a></p>

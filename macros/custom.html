@@ -1,0 +1,24 @@
+<h2 id="writing-custom-macros">Writing Custom Macros</h2>
+<p>To write a custom macro you have to provide an annotation to it to tell on which type of node you want to match.</p>
+<pre><code class="language-back"><span class="token annotation punctuation">@MacroInfo</span>(<span class="token string">"A macro for writing Tests"</span>, <span class="token string">"test"</span>, MacroMode.Call)
+<span class="token keyword">macro</span> MyTestMacro(node : LNode, context : IMacroContext) {
+    <span class="token keyword">let</span> testName = node.Args[<span class="token number">0</span>];
+    <span class="token keyword">let</span> body = node.Args[<span class="token number">1</span>];
+
+    <span class="token keyword">return</span> quote {
+        <span class="token keyword">public</span> <span class="token keyword">func</span> $testName() {
+            $body;
+        }
+    }
+}
+</code></pre>
+<p>The macro called</p>
+<pre><code class="language-back">test(something_should_pass) {
+    assert(<span class="token boolean">true</span>);
+}
+</code></pre>
+<p>expands to</p>
+<pre><code class="language-back"><span class="token keyword">public</span> <span class="token keyword">func</span> something_should_pass() {
+    assert(<span class="token boolean">true</span>);
+}
+</code></pre>

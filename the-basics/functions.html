@@ -1,0 +1,52 @@
+<h1 id="functions">Functions</h1>
+<p>A piece of code can be combined as function. Functions can expect parameters and can return a value. The simplest function is the <code>println</code> function to print a message to the outputstream (for example the console).</p>
+<p>The syntactic structure:</p>
+<pre><code class="language-ebnf">&lt;parameter&gt; ::= &lt;name&gt; &quot;:&quot; &lt;typename&gt; (&quot;=&quot; &lt;expression&gt;)?
+&lt;parameter_list&gt; ::= &lt;parameter&gt; || &lt;parameter&gt; &quot;,&quot; &lt;parameter_list&gt;
+&lt;function_definition&gt; ::= &lt;modifier&gt;? &quot;func&quot; &lt;name&gt; &quot;(&quot; &lt;parameter_list&gt;* &quot;)&quot; (&quot;-&gt;&quot; &lt;typename&gt;)? &quot;{&quot; &lt;body&gt; &quot;}&quot;
+</code></pre>
+<p>A quick example:</p>
+<pre><code class="language-back"><span class="token keyword">func</span> printHello() {
+    println(<span class="token string">"Hello!"</span>);
+}
+</code></pre>
+<p>When you want to pass arguments trough a function, do it like so</p>
+<pre><code class="language-back"><span class="token keyword">func</span> greet(name: <span class="token keyword">string</span>) {
+    println(<span class="token string">"Morning, "</span> + name + <span class="token string">"!"</span>);
+}
+
+greet(<span class="token string">"Lixou"</span>);
+</code></pre>
+<p>For a return type, you put an arrow before the block of code</p>
+<pre><code class="language-back"><span class="token keyword">func</span> getMyLovedNumber() -> <span class="token keyword">i32</span> {
+    <span class="token keyword">return</span> <span class="token number">2</span>;
+}
+
+<span class="token keyword">let</span> lovedNumber = getMyLovedNumber(); <span class="token comment">// this will be 2</span>
+</code></pre>
+<pre><code class="language-back"><span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">func</span> getMyLovedNumber() -> <span class="token keyword">i32</span> {
+    <span class="token keyword">return</span> <span class="token number">2</span>;
+}
+
+<span class="token keyword">let</span> lovedNumber = getMyLovedNumber(); <span class="token comment">// this will be 2</span>
+</code></pre>
+<p>For default values, just define them in the head of the function like so</p>
+<pre><code class="language-back"><span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">func</span> greet(name: <span class="token keyword">string</span> = <span class="token string">"Oh no it's nameless :c"</span>) -> <span class="token keyword">none</span> {
+    println(<span class="token string">"Morning, "</span> + name + <span class="token string">"!"</span>); 
+}
+
+greet(); <span class="token comment">// this will be "Morning, Oh no it's nameless :c!"</span>
+</code></pre>
+<p>Generic Arguments will be defined with the <code>where</code> keyword after the arguments</p>
+<pre><code class="language-back"><span class="token keyword">private</span> <span class="token keyword">static</span> <span class="token keyword">func</span> myCoolFunction(smth: T) <span class="token keyword">where</span> T: GameObject -> T {
+    <span class="token comment">// code...</span>
+}
+</code></pre>
+<p>When you want to skip a default variable of a function, do it this way</p>
+<pre><code class="language-back"><span class="token keyword">func</span> greet(thisIsUseless: <span class="token keyword">bool</span> = <span class="token boolean">false</span>, name: <span class="token keyword">string</span>) {
+    println(<span class="token string">"Morning, "</span> + name + <span class="token string">"!"</span>); 
+}
+
+greet(name = <span class="token string">"Peter"</span>); <span class="token comment">// we skip the bool "thisIsUseless" and jump directly to the name argument</span>
+</code></pre>
+<p>Optional arguments has to be after normal arguments</p>

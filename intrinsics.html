@@ -1,0 +1,10 @@
+<h1 id="intrinsics">Intrinsics</h1>
+<p>An intrinsic is a function that compiles directly to the targetet platform as instruction instead of calling it.
+In Backlang you can specify which block of instrinsic instructions are compiled based on the target. Every intrinsic instruction is a simple function call without return value.</p>
+<pre><code class="language-back"><span class="token keyword">inline</span>(dotnet) {
+    ld_str(<span class="token string">"Hello {0}"</span>);
+    ldc_i4(<span class="token number">42</span>);
+    call(System.Console::WriteLine(<span class="token keyword">string</span>, <span class="token keyword">obj</span>));
+}
+</code></pre>
+<p>A List of available <a href="/#/learn/intrinsics_dotnet">Dotnet</a> intrinsics</p>
