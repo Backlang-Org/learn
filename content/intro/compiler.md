@@ -6,4 +6,4 @@ First, the compiler loads the source code file and group semantic information to
 
 The macro expander takes the tree and run all macros to generate an expanded tree that will be taken to the transformer to build a complete typed intermediate tree. Last, the code generator of the selected target build an executable.
 
-<img src="https://raw.githubusercontent.com/Backlang-Org/backlang-org.github.io/main/learn/assets/Backlang-Compiler_Structure.png" />
+<img src="https://raw.githubusercontent.com/Backlang-Org/learn/main/assets/Backlang-Compiler_Structure.png" />
