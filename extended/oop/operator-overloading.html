@@ -1,0 +1,49 @@
+<h1 id="operator-overloading">Operator Overloading</h1>
+<p>Operator Overloading gives you the ability to write prettier code. Instead of writing functions you write operators.</p>
+<h2 id="overloadable-operators">Overloadable Operators</h2>
+<table>
+<thead>
+<tr>
+<th>Kind</th>
+<th>Operators</th>
+<th>Names</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Arithmetic</td>
+<td>+ - * / %</td>
+<td>add sub/neg mul div mod</td>
+</tr>
+<tr>
+<td>Bitwise</td>
+<td>^ ~ &amp; |</td>
+<td>exclusive_or bitwise_not bitwise_and bitwise_or</td>
+</tr>
+<tr>
+<td>Logical</td>
+<td>!</td>
+<td>logical_not</td>
+</tr>
+<tr>
+<td>Memory</td>
+<td>* &amp;</td>
+<td>deref addrof</td>
+</tr>
+</tbody></table>
+<p>Overloaded operators are functions with the <code>operator</code> modifier and the name has to be one of the list above.</p>
+<p>Here is a simple example of a <code>Point</code> struct.</p>
+<pre><code class="language-back"><span class="token keyword">public</span> <span class="token keyword">struct</span> Point {
+    <span class="token keyword">let</span> X : <span class="token keyword">i32</span>;
+    <span class="token keyword">let</span> Y : <span class="token keyword">i32</span>;
+}
+
+<span class="token keyword">implement</span> Point {
+    <span class="token keyword">operator</span> <span class="token keyword">func</span> add(lhs : Point, rhs : Point) -> Point {
+        <span class="token keyword">return</span> Point::new(lhs.X + rhs.X, lhs.Y + rhs.Y);
+    }
+
+    <span class="token keyword">operator</span> <span class="token keyword">func</span> neg(p : Point) -> Point {
+        <span class="token keyword">return</span> Point::new(-p.X, -p.Y);
+    }
+}
+</code></pre>
