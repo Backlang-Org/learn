@@ -1,6 +1,40 @@
 <h1 id="operator-overloading">Operator Overloading</h1>
 <p>Operator Overloading gives you the ability to write prettier code. Instead of writing functions you write operators.</p>
+<blockquote>
+<p>💡 Overloaded operators should not have side-effects.</p>
+</blockquote>
 <h2 id="overloadable-operators">Overloadable Operators</h2>
+<h3 id="unary">Unary</h3>
+<table>
+<thead>
+<tr>
+<th>Kind</th>
+<th>Operators</th>
+<th>Names</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>Arithmetic</td>
+<td>-</td>
+<td>neg</td>
+</tr>
+<tr>
+<td>Bitwise</td>
+<td>~</td>
+<td>bitwise_not</td>
+</tr>
+<tr>
+<td>Logical</td>
+<td>!</td>
+<td>logical_not</td>
+</tr>
+<tr>
+<td>Memory</td>
+<td>* &amp;</td>
+<td>deref addrof</td>
+</tr>
+</tbody></table>
+<h3 id="binary">Binary</h3>
 <table>
 <thead>
 <tr>
@@ -12,22 +46,12 @@
 <tbody><tr>
 <td>Arithmetic</td>
 <td>+ - * / %</td>
-<td>add sub/neg mul div mod</td>
+<td>add sub mul div mod</td>
 </tr>
 <tr>
 <td>Bitwise</td>
-<td>^ ~ &amp; |</td>
-<td>exclusive_or bitwise_not bitwise_and bitwise_or</td>
-</tr>
-<tr>
-<td>Logical</td>
-<td>!</td>
-<td>logical_not</td>
-</tr>
-<tr>
-<td>Memory</td>
-<td>* &amp;</td>
-<td>deref addrof</td>
+<td>^ &amp; |</td>
+<td>exclusive_or bitwise_and bitwise_or</td>
 </tr>
 </tbody></table>
 <p>Overloaded operators are functions with the <code>operator</code> modifier and the name has to be one of the list above.</p>
