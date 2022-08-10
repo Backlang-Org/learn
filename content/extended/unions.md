@@ -27,7 +27,7 @@ The `value` field can be used to convert all color values (RGBA) to a u32 intege
 
 ## Discriminated Unions
 
-A discrimated union is a typed union. It can be used to create a hierarchical type structure easily. And Du's are generating a default constructor and a `ToString` method.
+A discrimated union is a typed union. It can be used to create a hierarchical type structure easily. And Du's are generating a default constructor and a `ToString` method. You will see that discrimated unions saves a lot of lines of code.
 
 The structure of DU's:
 
@@ -85,4 +85,3 @@ implement Binary {
 }
 ```
 
-You see discrimated unions saves a lot of lines of code.
