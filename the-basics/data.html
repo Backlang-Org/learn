@@ -6,7 +6,7 @@
 <pre><code class="language-ebnf">&lt;<span class="token rule">struct_value</span>> ::<span class="token operator">=</span> <span class="token string">"let"</span> &lt;<span class="token rule">name</span>> <span class="token string">":"</span> &lt;<span class="token rule">typename</span>> <span class="token string">";"</span>
 &lt;<span class="token rule">struct_declaration</span>> ::<span class="token operator">=</span> &lt;<span class="token rule">modifier</span>>? <span class="token string">"struct"</span> &lt;<span class="token rule">name</span>> <span class="token string">"{"</span> &lt;<span class="token rule">struct_value</span>><span class="token operator">*</span> <span class="token string">"}"</span>
 </code></pre>
-<p>For the struct an automatic constructor will be genertet to init all values.</p>
+<p>For the struct an automatic constructor will be generated to init all fields.</p>
 <p>A simple example:</p>
 <pre><code class="language-back"><span class="token keyword">public</span> <span class="token keyword">struct</span> Point {
     <span class="token keyword">let</span> X : <span class="token keyword">i32</span>;
