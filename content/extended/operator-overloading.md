@@ -8,12 +8,12 @@ Operator Overloading gives you the ability to write prettier code. Instead of wr
 
 ### Unary
 
-| Kind       | Operators | Names        |
-|------------|-----------|--------------|
-| Arithmetic | -         | neg          |
-| Bitwise    | ~         | bitwise_not  |
-| Logical    | !         | logical_not  |
-| Memory     | * &       | deref addrof |
+| Kind       | Operators | Names          |
+|------------|-----------|----------------|
+| Arithmetic | - %       | neg percentage |
+| Bitwise    | ~         | bitwise_not    |
+| Logical    | !         | logical_not    |
+| Memory     | * &       | deref addrof   |
 
 ### Binary
 
