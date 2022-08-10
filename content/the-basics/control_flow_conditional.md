@@ -1,24 +1,39 @@
 # Conditional Control Flow
 
-## If Statements
+What would a program be without any decisions? Really boring. There are two kinds of conditional statements available in Backlang, `if` and `switch`. But what is a condition and conditional control flow? Let's figure it out.
 
-If-statements behave like how you would expect them to behave
+## Conditions
 
-First, you write `if`, then the condition and at last one single statement or a block
-Do it like so:
+A condition resolves always to a value that is `true` or `false`. Conditions can be combined with relational operators. Here is a list:
 
-```back
-if age >= 18 {
-    // the person is older than 18 years
-}
+| operator | description                                                                                    |
+|----------|------------------------------------------------------------------------------------------------|
+| ! not    | The logical not operator inverts the result. `true => false` and `false => true`               |
+| && and   | The logical and combines two conditions. It evaluates to true only if both conditions are true |
+| \|\| or  | The logical or operator evaluates to true if one of the operands are true                      |
+
+## If-Statements
+
+If-Statements give the possibility of branching the control flow. 
+
+Here is the syntactic structure of a full if-statement:
+```ebnf
+<if_statement> ::= "if" <condition> "{" <trueBody> "}" ("else" "{" <falseBody> "}")?
 ```
 
-When the condition is false, you can also run code with the `else` keyword
+If only one statement is given for the body the curly braces can be leaved out.
+
+Here is a simple example:
 
 ```back
-if age >= 18 {
-    // the person is older than 18 years
-} else {
-    // person is younger than 18 years
+public static func main() {
+    let isHappy = true;
+
+    if isHappy {
+        print("You are happy.");
+    }
+    else {
+        print("You are not happy");
+    }
 }
 ```
