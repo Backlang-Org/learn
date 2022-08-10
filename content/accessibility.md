@@ -9,4 +9,8 @@ Backlang can protect members from being used by others. This accessibility attri
 | protected | only visible in inheriting classes   |
 | internal  | only visible in the current assembly |
 
+| Attribute | Description                           |
+|-----------|---------------------------------------|
+| extern    | The function is implemented somewhere |
+
 If no modifier is specified the default is private.
