@@ -1,16 +1,42 @@
 <h1 id="conditional-control-flow">Conditional Control Flow</h1>
-<h2 id="if-statements">If Statements</h2>
-<p>If-statements behave like how you would expect them to behave</p>
-<p>First, you write <code>if</code>, then the condition and at last one single statement or a block
-Do it like so:</p>
-<pre><code class="language-back"><span class="token keyword">if</span> age >= <span class="token number">18</span> {
-    <span class="token comment">// the person is older than 18 years</span>
-}
+<p>What would a program be without any decisions? Really boring. There are two kinds of conditional statements available in Backlang, <code>if</code> and <code>switch</code>. But what is a condition and conditional control flow? Let&#39;s figure it out.</p>
+<h2 id="conditions">Conditions</h2>
+<p>A condition resolves always to a value that is <code>true</code> or <code>false</code>. Conditions can be combined with relational operators. Here is a list:</p>
+<table>
+<thead>
+<tr>
+<th>operator</th>
+<th>description</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>! not</td>
+<td>The logical not operator inverts the result. <code>true =&gt; false</code> and <code>false =&gt; true</code></td>
+</tr>
+<tr>
+<td>&amp;&amp; and</td>
+<td>The logical and combines two conditions. It evaluates to true only if both conditions are true</td>
+</tr>
+<tr>
+<td>|| or</td>
+<td>The logical or operator evaluates to true if one of the operands are true</td>
+</tr>
+</tbody></table>
+<h2 id="if-statements">If-Statements</h2>
+<p>If-Statements give the possibility of branching the control flow. </p>
+<p>Here is the syntactic structure of a full if-statement:</p>
+<pre><code class="language-ebnf">&lt;<span class="token rule">if_statement</span>> ::<span class="token operator">=</span> <span class="token string">"if"</span> &lt;<span class="token rule">condition</span>> <span class="token string">"{"</span> &lt;<span class="token rule">trueBody</span>> <span class="token string">"}"</span> <span class="token punctuation">(</span><span class="token string">"else"</span> <span class="token string">"{"</span> &lt;<span class="token rule">falseBody</span>> <span class="token string">"}"</span><span class="token punctuation">)</span>?
 </code></pre>
-<p>When the condition is false, you can also run code with the <code>else</code> keyword</p>
-<pre><code class="language-back"><span class="token keyword">if</span> age >= <span class="token number">18</span> {
-    <span class="token comment">// the person is older than 18 years</span>
-} <span class="token keyword">else</span> {
-    <span class="token comment">// person is younger than 18 years</span>
+<p>If only one statement is given for the body the curly braces can be leaved out.</p>
+<p>Here is a simple example:</p>
+<pre><code class="language-back"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">func</span> main() {
+    <span class="token keyword">let</span> isHappy = <span class="token boolean">true</span>;
+
+    <span class="token keyword">if</span> isHappy {
+        print(<span class="token string">"You are happy."</span>);
+    }
+    <span class="token keyword">else</span> {
+        print(<span class="token string">"You are not happy"</span>);
+    }
 }
 </code></pre>

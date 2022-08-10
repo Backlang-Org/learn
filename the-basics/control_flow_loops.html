@@ -1,5 +1,20 @@
 <h1 id="loops">Loops</h1>
-<p>Now I will introduce you the concept of loops. A loop is a language construct to repeat code.</p>
-<p>We will start with the <code>while</code>-loop.</p>
+<p>Now I will introduce you the concept of loops. A loop repeats code.</p>
+<p>We will start with the simplest loop.</p>
 <h2 id="while-loops">While Loops</h2>
+<p>The while loop is a head controlled loop. That means that the body will only be executed if the condition is true, otherwise the body will be skipped.</p>
+<p>Here is the syntactic structure:</p>
+<pre><code class="language-ebnf">&lt;<span class="token rule">while_loop</span>> ::<span class="token operator">=</span> <span class="token string">"while"</span> &lt;<span class="token rule">condition</span>> <span class="token string">"{"</span> &lt;<span class="token rule">body</span>> <span class="token string">"}"</span>
+</code></pre>
+<p>Here is a simple example:</p>
+<pre><code class="language-back"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">func</span> main() {
+    <span class="token keyword">let</span> <span class="token keyword">mut</span> number = <span class="token number">42</span>;
+
+    <span class="token keyword">while</span> number > <span class="token number">0</span> { <span class="token comment">//only execute if number is greater than zero</span>
+        print(number); <span class="token comment">//prints the number</span>
+
+        numer = number + <span class="token number">1</span>; <span class="token comment">//increses number by 1</span>
+    }
+}
+</code></pre>
 <h2 id="foreach-loops">ForEach Loops</h2>
