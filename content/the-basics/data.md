@@ -3,7 +3,7 @@
 ## Structs
 
 ## Declaring structs
-A struct is something like a wrapper for different values. It is a valuetype and allocated on the stack (.Net, it can differe for other backends). A struct can only have values. A struct is always immutable. 
+A struct is something like a wrapper for different values. It is a valuetype and allocated on the stack (.Net, it can differe for other backends). A struct can only have values. 
 
 The syntactic structure of a struct:
 ```ebnf
@@ -11,7 +11,7 @@ The syntactic structure of a struct:
 <struct_declaration> ::= <modifier>? "struct" <name> "{" <struct_value>* "}"
 ```
 
-Because of the immutability the struct generates an automatic constructor to init all values at allocation.
+For the struct an automatic constructor will be genertet to init all values.
 
 A simple example:
 ```back
