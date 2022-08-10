@@ -11,7 +11,7 @@ The syntactic structure of a struct:
 <struct_declaration> ::= <modifier>? "struct" <name> "{" <struct_value>* "}"
 ```
 
-For the struct an automatic constructor will be genertet to init all values.
+For the struct an automatic constructor will be generated to init all fields.
 
 A simple example:
 ```back
