@@ -1,12 +1,12 @@
 <h1 id="working-with-data">Working With Data</h1>
 <h2 id="structs">Structs</h2>
 <h2 id="declaring-structs">Declaring structs</h2>
-<p>A struct is something like a wrapper for different values. It is a valuetype and allocated on the stack (.Net, it can differe for other backends). A struct can only have values. A struct is always immutable. </p>
+<p>A struct is something like a wrapper for different values. It is a valuetype and allocated on the stack (.Net, it can differe for other backends). A struct can only have values. </p>
 <p>The syntactic structure of a struct:</p>
 <pre><code class="language-ebnf">&lt;<span class="token rule">struct_value</span>> ::<span class="token operator">=</span> <span class="token string">"let"</span> &lt;<span class="token rule">name</span>> <span class="token string">":"</span> &lt;<span class="token rule">typename</span>> <span class="token string">";"</span>
 &lt;<span class="token rule">struct_declaration</span>> ::<span class="token operator">=</span> &lt;<span class="token rule">modifier</span>>? <span class="token string">"struct"</span> &lt;<span class="token rule">name</span>> <span class="token string">"{"</span> &lt;<span class="token rule">struct_value</span>><span class="token operator">*</span> <span class="token string">"}"</span>
 </code></pre>
-<p>Because of the immutability the struct generates an automatic constructor to init all values at allocation.</p>
+<p>For the struct an automatic constructor will be genertet to init all values.</p>
 <p>A simple example:</p>
 <pre><code class="language-back"><span class="token keyword">public</span> <span class="token keyword">struct</span> Point {
     <span class="token keyword">let</span> X : <span class="token keyword">i32</span>;

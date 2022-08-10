@@ -1,2 +1,70 @@
 <h2 id="unions">Unions</h2>
+<p>An union can be used to hold a value with different types. Unions can be used to avoid casting.</p>
+<p>The syntactic structure of an union:</p>
+<pre><code class="language-ebnf">&lt;<span class="token rule">memory_offset</span>> ::<span class="token operator">=</span> &lt;<span class="token rule">int_number</span>>
+&lt;<span class="token rule">union_value</span>> ::<span class="token operator">=</span> <span class="token string">"let"</span> &lt;<span class="token rule">name</span>> <span class="token string">"="</span> &lt;<span class="token rule">memory_offset</span>> <span class="token string">";"</span>
+&lt;<span class="token rule">union_declaration</span>> ::<span class="token operator">=</span> &lt;<span class="token rule">modifier</span>>? <span class="token string">"union"</span> &lt;<span class="token rule">name</span>> <span class="token string">"{"</span> &lt;<span class="token rule">union_value</span>><span class="token operator">*</span> <span class="token string">"}"</span>
+</code></pre>
+<p>A color union is a good example:</p>
+<pre><code class="language-back">
+<span class="token keyword">public</span> <span class="token keyword">union</span> Color {
+    <span class="token keyword">let</span> <span class="token keyword">mut</span> R: <span class="token keyword">u8</span> = <span class="token number">0</span>;
+    <span class="token keyword">let</span> <span class="token keyword">mut</span> G: <span class="token keyword">u8</span> = <span class="token number">1</span>;
+    <span class="token keyword">let</span> <span class="token keyword">mut</span> B: <span class="token keyword">u8</span> = <span class="token number">2</span>;
+    <span class="token keyword">let</span> <span class="token keyword">mut</span> A: <span class="token keyword">u8</span> = <span class="token number">3</span>;
+
+    <span class="token keyword">let</span> value: <span class="token keyword">u32</span> = <span class="token number">0</span>;
+}
+</code></pre>
+<p>The <code>value</code> field can be used to convert all color values (RGBA) to a u32 integer without casting. A union allocates memory for the most sized variable type. In this example the whole union will allocate 4 bytes because the biggest type used in the union is u32.</p>
 <h2 id="discriminated-unions">Discriminated Unions</h2>
+<p>A discrimated union is a typed union. It can be used to create a hierarchical type structure easily.</p>
+<p>The structure of DU&#39;s:</p>
+<pre><code class="language-ebnf">&lt;<span class="token rule">du_prop</span>> ::<span class="token operator">=</span> <span class="token string">"mutable"</span>? &lt;<span class="token rule">name</span>> <span class="token string">":"</span> &lt;<span class="token rule">type</span>>
+&lt;<span class="token rule">du_prop_list</span>> ::<span class="token operator">=</span> &lt;<span class="token rule">du_prop</span>> <span class="token string">","</span> &lt;<span class="token rule">du_prop_list</span>> <span class="token operator">|</span> &lt;<span class="token rule">du_prop</span>>
+&lt;<span class="token rule">du_type_def</span>> ::<span class="token operator">=</span> <span class="token string">"|"</span> &lt;<span class="token rule">name</span>> <span class="token string">"("</span> &lt;<span class="token rule">du_prop_list</span>> <span class="token string">")"</span>
+&lt;<span class="token rule">du_definition</span>> ::<span class="token operator">=</span> <span class="token string">"type"</span> &lt;<span class="token rule">name</span>> <span class="token string">"="</span> &lt;<span class="token rule">du_type_def</span>><span class="token operator">*</span> <span class="token string">";"</span>
+</code></pre>
+<p>For example we will create a simple DU for an abstract syntax tree:</p>
+<pre><code class="language-back"><span class="token keyword">public</span> <span class="token keyword">type</span> Expression = | Literal(Value : <span class="token keyword">obj</span>)
+                  | Group(Inner : Expression)
+                  | Binary(Lhs : Expression, Operator : <span class="token keyword">string</span>, Rhs : Expression);
+</code></pre>
+<p>The normal equivalent class structure would be:</p>
+<pre><code class="language-back"><span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">class</span> Expression {
+
+}
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> Literal {
+    <span class="token keyword">let</span> Value : <span class="token keyword">obj</span>;
+}
+
+<span class="token keyword">implement</span> Literal {
+    <span class="token keyword">public</span> <span class="token keyword">constructor</span>(value : <span class="token keyword">obj</span>) {
+       Value = value;
+    }
+}
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> Group {
+    <span class="token keyword">let</span> Inner: Expression;
+}
+
+<span class="token keyword">implement</span> Group {
+    <span class="token keyword">public</span> <span class="token keyword">constructor</span>(inner : Expression) {
+       Inner = inner;
+    }
+}
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> Binary {
+    <span class="token keyword">let</span> Lhs: Expression;
+    <span class="token keyword">let</span> Rhs: Expression;
+}
+
+<span class="token keyword">implement</span> Binary {
+    <span class="token keyword">public</span> <span class="token keyword">constructor</span>(lhs : Expression) {
+       Lhs = lhs;
+       Rhs = rhs;
+    }
+}
+</code></pre>
+<p>You see discrimated unions saves a lot of lines of code. They also generated <code>ToString</code> methods for any subtype.</p>
