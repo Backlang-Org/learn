@@ -1,13 +1,16 @@
 <h1 id="arrays">Arrays</h1>
-<p>An array can hold multiple values of a specific type. The space must be preallocated.</p>
+<p>An array can hold multiple values of a specific type. The memory must be preallocated.</p>
 <p>The structure of a variable of array type:</p>
 <pre><code class="language-ebnf">&lt;<span class="token rule">array_type</span>> ::<span class="token operator">=</span> &lt;<span class="token rule">typename</span>> <span class="token string">"["</span> <span class="token string">","</span>+ <span class="token string">"]"</span>
 &lt;<span class="token rule">expression_list</span>> ::<span class="token operator">=</span> &lt;<span class="token rule">expression</span>> <span class="token string">","</span> &lt;<span class="token rule">expression_list</span>> <span class="token operator">|</span> &lt;<span class="token rule">expression</span>>
 &lt;<span class="token rule">array_expression</span>> ::<span class="token operator">=</span> <span class="token string">"["</span> &lt;<span class="token rule">expression_list</span>> <span class="token string">"]"</span>
 </code></pre>
 <p>Simple Example:</p>
-<pre><code class="language-back"><span class="token keyword">let</span> primes : <span class="token keyword">i32</span>[] = [<span class="token number">2</span>, <span class="token number">3</span>, <span class="token number">5</span>, <span class="token number">7</span>, <span class="token number">11</span>, <span class="token number">13</span>];
+<pre><code class="language-back"><span class="token keyword">let</span> primes : <span class="token keyword">i32</span>[] = [<span class="token number">2</span>, <span class="token number">3</span>, <span class="token number">5</span>, <span class="token number">8</span>, <span class="token number">11</span>, <span class="token number">13</span>];
 </code></pre>
-<p>A value of the array can be access though the index operator in square brackets. Every item has an index to indentify an element. An index starts at zero, so the first element is accessable at index 0, the second element is accessible at index 1 and so on.</p>
+<p>A value of the array can be accessed though the index operator in square brackets. Every item has an index to indentify an element. An index starts at zero, so the first element is accessable at index 0, the second element is accessible at index 1 and so on. The index has to be in the bounds of the array. It cannot be negative or higher the length - 1.</p>
 <pre><code class="language-back">print(primes[<span class="token number">1</span>]); <span class="token comment">//access the 2. element</span>
+</code></pre>
+<p>A value of the array can be also changed, even if the variable is not mutable. </p>
+<pre><code class="language-back">primes[<span class="token number">3</span>] = <span class="token number">7</span>;
 </code></pre>
