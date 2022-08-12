@@ -37,3 +37,19 @@ To pass a specific field to a function for example you can use the `.`-operator.
 print(p.X);
 print(p.Y);
 ```
+
+## Tuples
+
+A tuple is like an anonymous struct. It can hold values but it don't has a name. Tuples can be used to map or return multiple values. A tuple can hold up to 8 values. 
+
+Here is a simple example:
+
+```back
+let myTuple : (i32, bool) = (42, true);
+```
+
+```back
+func doSomething() {
+    return (1, "Some Error Occured");
+}
+```
