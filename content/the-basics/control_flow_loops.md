@@ -25,5 +25,3 @@ public static func main() {
     }
 }
 ```
-
-## ForEach Loops
