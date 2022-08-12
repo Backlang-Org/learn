@@ -49,7 +49,7 @@ let myTuple : (i32, bool) = (42, true);
 ```
 
 ```back
-func doSomething() : (i32, string) {
+func doSomething() -> (i32, string) {
     return (1, "Some Error Occured");
 }
 ```
