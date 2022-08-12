@@ -40,7 +40,7 @@ print(p.Y);
 
 ## Tuples
 
-A tuple is like an anonymous struct. It can hold values but it don't has a name. Tuples can be used to map or return multiple values. A tuple can hold up to 8 values. 
+A tuple is like an anonymous struct. It can hold values but it doesn't have a name. Tuples can be used to map or return multiple values. A tuple can hold up to 8 values. 
 
 Here is a simple example:
 
