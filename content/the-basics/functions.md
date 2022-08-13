@@ -24,7 +24,7 @@ func greet(name: string) {
     println("Morning, " + name + "!");
 }
 
-greet("Lixou");
+greet("Bob");
 ```
 
 For a return type, you put an arrow before the block of code
@@ -37,15 +37,6 @@ func getMyLovedNumber() -> i32 {
 let lovedNumber = getMyLovedNumber(); // this will be 2
 ```
 
-
-
-```back
-private static func getMyLovedNumber() -> i32 {
-    return 2;
-}
-
-let lovedNumber = getMyLovedNumber(); // this will be 2
-```
 
 For default values, just define them in the head of the function like so
 
@@ -60,7 +51,7 @@ greet(); // this will be "Morning, Oh no it's nameless :c!"
 Generic Arguments will be defined with the `where` keyword after the arguments
 
 ```back
-private static func myCoolFunction(smth: T) where T: GameObject -> T {
+private static func myCoolFunction<T>(smth: T) where T: GameObject -> T {
     // code...
 }
 ```
@@ -68,7 +59,7 @@ private static func myCoolFunction(smth: T) where T: GameObject -> T {
 When you want to skip a default variable of a function, do it this way
 
 ```back
-func greet(thisIsUseless: bool = false, name: string) {
+func greet(name : string, thisIsUseless: bool = false) {
     println("Morning, " + name + "!"); 
 }
 
