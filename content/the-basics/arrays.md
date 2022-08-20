@@ -28,3 +28,11 @@ A value of the array can be also changed, even if the variable is not mutable.
 primes[3] = 7;
 ```
 
+The example above is an array of 1 Dimension. You can also define arrays of more dimensions to build a matrix.
+
+To declare a n-th dimensional array:
+
+```back
+let matrix : i32[,] = [[0, 1], [1, 0]];
+let element = matrix[0, 0];
+```
