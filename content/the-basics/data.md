@@ -66,4 +66,6 @@ The sample above uses a range from 1 to 200 inclusive. That means an array will 
 
 ## Exercices
 
-1. 
+1. Expplain the difference between a struct and a tuple.
+2. Is it possible to nest tuples?
+3. How much values can hold a tuple?
