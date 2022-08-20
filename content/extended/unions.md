@@ -87,4 +87,6 @@ implement Binary {
 
 ## Exercices
 
-1. 
+1. What is the difference between a union and a discriminated union?
+2. What is the profit of using unions?
+3. What could be an usage screnario of using a discriminated union?
