@@ -40,4 +40,7 @@ public static func main() {
 
 ## Exercices
 
-1. 
+Given is following expression: `x and !b`. 
+
+1. Is this valid code?
+2. On which conditions is this code semantically incorrect?
