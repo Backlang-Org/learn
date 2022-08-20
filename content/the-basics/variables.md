@@ -48,4 +48,7 @@ day = "Tuesday";
 
 ## Exercices
 
-1. 
+1. Declare an immutable variable which stores the value of PI.
+2. Try to reassign the value to `42`. 
+    - Why is this not allowed?
+    - How can you allow reassign a value?
