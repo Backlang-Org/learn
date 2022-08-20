@@ -55,4 +55,6 @@ public static func main() {
 
 ## Exercices
 
-1. 
+1. Write a structure called `Vector2` and implement all neccessary operator that can be applied to a Vector
+2. Which operators cannot be overloaded?
+3. Why you don't want to overload the memory operators on a `Vector2` struct?
