@@ -52,4 +52,5 @@ for x in 12..1 {
 
 ## Exercices
 
-1. 
+1. Write a program to calculate the factorial number with a while loop.
+2. Would be a for loop for this problem possible?
