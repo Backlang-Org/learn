@@ -49,3 +49,7 @@ for x in 12..1 {
     print("index: " + x);
 }
 ```
+
+## Exercices
+
+1. 

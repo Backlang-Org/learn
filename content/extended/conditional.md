@@ -58,3 +58,7 @@ switch element {
     default: print("its not the value :c");
 }
 ```
+
+## Exercices
+
+1. 

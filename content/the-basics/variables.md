@@ -45,3 +45,7 @@ A simple example:
 let mut day = "Monday";
 day = "Tuesday";
 ```
+
+## Exercices
+
+1. 

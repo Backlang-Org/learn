@@ -52,3 +52,7 @@ public static func main() {
     print(negP);
 }
 ```
+
+## Exercices
+
+1. 

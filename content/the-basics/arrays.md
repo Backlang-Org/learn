@@ -36,3 +36,7 @@ To declare a n-th dimensional array:
 let matrix : i32[,] = [[0, 1], [1, 0]];
 let element = matrix[0, 0];
 ```
+
+## Exercices
+
+1. 

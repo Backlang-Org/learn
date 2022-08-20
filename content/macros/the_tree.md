@@ -16,3 +16,7 @@ Calling Conventions of Targets:
     ```
     
 Literals are automaticly typed by the parser. A type is a call and a literal node as argument. So the number `42` will be treated as `#Int32(42)`. Modifiers like `public` are attributes on a node.
+
+## Exercices
+
+1. 

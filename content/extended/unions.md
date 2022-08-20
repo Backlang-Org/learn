@@ -85,3 +85,6 @@ implement Binary {
 }
 ```
 
+## Exercices
+
+1. 

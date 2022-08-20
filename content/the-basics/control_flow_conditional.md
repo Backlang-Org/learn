@@ -37,3 +37,7 @@ public static func main() {
     }
 }
 ```
+
+## Exercices
+
+1. 

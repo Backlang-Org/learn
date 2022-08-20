@@ -67,3 +67,7 @@ greet(name = "Peter"); // we skip the bool "thisIsUseless" and jump directly to 
 ```
 
 Optional arguments has to be after normal arguments
+
+## Exercices
+
+1. 
