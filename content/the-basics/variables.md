@@ -52,3 +52,4 @@ day = "Tuesday";
 2. Try to reassign the value to `42`. 
     - Why is this not allowed?
     - How can you allow reassign a value?
+3. What is the difference between `char` and `string`?

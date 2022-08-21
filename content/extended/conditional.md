@@ -61,4 +61,5 @@ switch element {
 
 ## Exercices
 
-1. 
+1. Why you would use an switch-statement instead of an if-statement?
+2. 
