@@ -1,6 +1,5 @@
 <h1 id="loops">Loops</h1>
-<p>Now I will introduce you the concept of loops. A loop repeats code.</p>
-<p>We will start with the simplest loop.</p>
+<p>Now I will introduce you the concept of loops. A loop can repeat code. There are several kind of loops but we will start with the simplest loop - The <code>while</code> loop.</p>
 <h2 id="while-loops">While Loops</h2>
 <p>The while loop is a head controlled loop. That means that the body will only be executed if the condition is true, otherwise the body will be skipped.</p>
 <p>Here is the syntactic structure:</p>
@@ -17,3 +16,23 @@
     }
 }
 </code></pre>
+<h2 id="for-loop">For-Loop</h2>
+<p>A for loop can be used to iterate over arrays/iterators. To repeat code a certain amount of iterations you can use ranges. </p>
+<p>The definition of a for-loop:</p>
+<pre><code class="language-ebnf">&lt;<span class="token rule">for_loop</span>> ::<span class="token operator">=</span> <span class="token string">"for"</span> &lt;<span class="token rule">name</span>> <span class="token string">"in"</span> &lt;<span class="token rule">iterable</span>> <span class="token string">"{"</span> &lt;<span class="token rule">body</span>> <span class="token string">"}"</span>
+</code></pre>
+<p>A simple example to repeat code:</p>
+<pre><code class="language-back"><span class="token keyword">for</span> x <span class="token keyword">in</span> <span class="token number">1</span>..<span class="token number">12</span> {
+    print(<span class="token string">"index: "</span> + x);
+}
+</code></pre>
+<p>You can also use ranges to reverese the index:</p>
+<pre><code class="language-back"><span class="token keyword">for</span> x <span class="token keyword">in</span> <span class="token number">12</span>..<span class="token number">1</span> {
+    print(<span class="token string">"index: "</span> + x);
+}
+</code></pre>
+<h2 id="exercices">Exercices</h2>
+<ol>
+<li>Write a program to calculate the factorial number with a while loop.</li>
+<li>Would be a for loop for this problem possible?</li>
+</ol>

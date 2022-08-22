@@ -5,4 +5,27 @@
     <code>        &#39;+(1, 2)    </code></p>
 <p># is a keyword, for example: <code>while true {}</code>
     <code>    #while(#Boolean(true), &#39;{})    </code></p>
-<p>Literals are automaticly typed by the parser. A type is a call and a literal node as argument. So the number <code>42</code> will be treated as <code>#Int32(42)</code>. Modifiers like <code>public</code> are attributes on a node.</p>
+<p>Literals are automaticly typed by the parser. A type is a call and a literal node as argument. So the number <code>42</code> will be treated as <code>#Int32(42)</code>. Modifiers like <code>public</code> are attributes on a node.
+The <code>quote</code> macro expand code to its actual tree. So you can use it to figure out a tree of a certain language construct.</p>
+<h2 id="exercices">Exercices</h2>
+<ol>
+<li><p>If you have an expression <code>42</code>. What tree will be used?
+ [ ] #uint(42)
+ [ ] #literal(42)
+ [ ] #int32(42)</p>
+</li>
+<li><p>Translate this code snippet to the actual tree:</p>
+</li>
+</ol>
+<pre><code class="language-back"><span class="token keyword">public</span> function main() {
+    <span class="token keyword">let</span> userInput = System.Console::ReadLine();
+
+    <span class="token keyword">if</span> userInput == <span class="token string">":q"</span> {
+        print(<span class="token string">"The application will now close"</span>);
+    }
+}
+</code></pre>
+<ol start="3">
+<li>Translate this tree to valid backlang code:</li>
+</ol>
+<p><code>@[mutable] #var(#type(#(@&#39;&#39;, #of())), errorCode = #uint64(0));</code></p>
