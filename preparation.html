@@ -7,8 +7,9 @@
 <h2 id="2-tooling">2. Tooling</h2>
 <p>To have an easier start install the Backlang-Manager <code>dotnet tool install --global Backlang-Manager</code>. This application can easily install the backlang sdk, templates and the vscode extension for you. For installing the complete toolset <code>backlang install --with-extension</code></p>
 <blockquote>
-<p>💡 To Install the sdk using the manager you need admin rights.</p>
+<p>💡 To Install the sdk using the manager you need admin rights and it only works currently on windows.</p>
 </blockquote>
+<p>To have the full tooling experience the source file has to have the <code>.back</code> file extension.</p>
 <p>Otherwise you can use following commands:</p>
 <pre><code class="language-bash">dotnet new <span class="token function">install</span> Backlang.Templates
 code --install-extension furesoft.back --force
