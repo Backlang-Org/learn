@@ -1,3 +1,60 @@
 <h1 id="classes">Classes</h1>
+<p>A class is like a template for objects and classes can inherit from each other to represent a hierarchical structure. Classes can also have an implement block to append functions. These functions are called <code>member functions</code>. If a function is not in an implement block it is called <code>free function</code>. All Properties/Fields/Methods are inheritet from the base class. An <code>abstract</code> function has to be implemented by the inherentor but a <code>virtual</code> function can be overriden by the inherentor. To use a class it has to be fully implemented, that means that all abstract members have to be implemented.</p>
+<blockquote>
+<p>💡 You can only inherit from one base class but you can implement as many interfaces as you want. See <a href="/oop/interfaces">Interfaces</a>.</p>
+</blockquote>
+<p>The syntax of a class:</p>
+<pre><code class="language-ebnf">&lt;<span class="token rule">inheritances</span>> ::<span class="token operator">=</span> &lt;<span class="token rule">name</span>> <span class="token string">","</span> &lt;<span class="token rule">inheritances</span>> <span class="token operator">|</span> &lt;<span class="token rule">name</span>>
+&lt;<span class="token rule">field</span>> ::<span class="token operator">=</span> &lt;<span class="token rule">modifiers</span>> &lt;<span class="token rule">variable_declaration</span>>
+
+&lt;<span class="token rule">function_body</span>> ::<span class="token operator">=</span> <span class="token string">"{"</span> &lt;<span class="token rule">statements</span>> <span class="token string">"}"</span>
+
+&lt;<span class="token rule">get_block</span>> ::<span class="token operator">=</span> <span class="token string">"get"</span> <span class="token punctuation">(</span>&lt;<span class="token rule">function_body</span>> <span class="token operator">|</span> <span class="token string">";"</span><span class="token punctuation">)</span>
+&lt;<span class="token rule">set_block</span>> ::<span class="token operator">=</span> <span class="token string">"set"</span> <span class="token punctuation">(</span>&lt;<span class="token rule">function_body</span>><span class="token punctuation">)</span> <span class="token operator">|</span> <span class="token string">";"</span><span class="token punctuation">)</span>
+&lt;<span class="token rule">get_and_set_block</span>> ::<span class="token operator">=</span> &lt;<span class="token rule">get_block</span>> &lt;<span class="token rule">set_block</span>>
+
+&lt;<span class="token rule">property</span>> ::<span class="token operator">=</span> &lt;<span class="token rule">modifiers</span>> <span class="token string">"prop"</span> &lt;<span class="token rule">name</span>> <span class="token string">"{"</span> &lt;<span class="token rule">get_block</span>> <span class="token operator">|</span> &lt;<span class="token rule">get_and_set_block</span>> <span class="token string">"}"</span>
+
+&lt;<span class="token rule">class_members</span>> ::<span class="token operator">=</span> &lt;<span class="token rule">field</span>> <span class="token operator">|</span> &lt;<span class="token rule">property</span>>
+&lt;<span class="token rule">class_declaration</span>> ::<span class="token operator">=</span> &lt;<span class="token rule">modifiers</span>> <span class="token string">"class"</span> &lt;<span class="token rule">name</span>> <span class="token punctuation">(</span><span class="token string">":"</span> &lt;<span class="token rule">inheritances</span>><span class="token punctuation">)</span> <span class="token string">"{"</span> &lt;<span class="token rule">class_members</span>> <span class="token string">"}"</span>
+</code></pre>
+<p>A class instance can be created like a struct with the static <code>new</code> function. Here is a little sample of a class hierarchie:</p>
+<pre><code class="language-back"><span class="token keyword">public</span> <span class="token keyword">abstract</span> <span class="token keyword">class</span> Animal {
+
+}
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> Mammal : Animal {
+
+}
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> Bird : Animal {
+
+}
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> Dog : Mammal {
+
+}
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> Kiwi : Bird {
+
+}
+
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">func</span> main() {
+    <span class="token keyword">let</span> animal = Dog::new();
+
+    <span class="token keyword">if</span> animal is Dog {
+        print(<span class="token string">"Wuff"</span>);
+    }
+    <span class="token keyword">else</span> {
+        print(<span class="token string">"I don't know how the animal communicate"</span>);
+    }
+}
+</code></pre>
+<p>As from the example above you can see that we create an immutable instance of <code>Dog</code> and set it to the variable <code>animal</code>. We can check if an instance is of a specific type with the <code>is</code> keyword which returns a boolean.
+So, if the instance created is of type <code>Dog</code> we print a specific message to the console otherwise we print an error message.</p>
 <h2 id="exercices">Exercices</h2>
-<p>1. </p>
+<ol>
+<li>What is the difference between a class and a struct?</li>
+<li>Create a class hierarchie for any car brand you know. With the property <code>color</code> and one virtual function <code>GetDescription</code>.</li>
+<li>Create some instances of your classes and call the <code>GetDescription</code> member function. Does this print that what you expect?</li>
+</ol>

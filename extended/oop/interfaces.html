@@ -1,3 +1,27 @@
 <h1 id="interfaces">Interfaces</h1>
+<p>An interface describes a contract between different objects. If a class implements an interface the instanciator knows that all members are implemented. You can also inherit from other interfaces to combine many interfaces into one name. Interface names should start with an <code>I</code>.</p>
+<p>The syntax of an interface:</p>
+<pre><code class="language-ebnf">&lt;<span class="token rule">interface_list</span>> ::<span class="token operator">=</span> &lt;<span class="token rule">name</span>> <span class="token string">","</span> &lt;<span class="token rule">interface_list</span>> <span class="token operator">|</span> &lt;<span class="token rule">name</span>>
+&lt;<span class="token rule">interface_declaration</span>> ::<span class="token operator">=</span> &lt;<span class="token rule">modifiers</span>> <span class="token string">"interface"</span> &lt;<span class="token rule">name</span>> <span class="token punctuation">(</span><span class="token string">":"</span> &lt;<span class="token rule">interface_list</span>><span class="token punctuation">)</span>? <span class="token string">"{"</span> &lt;<span class="token rule">declarations</span>> <span class="token string">"}"</span>
+</code></pre>
+<p>Here a little example:</p>
+<pre><code class="language-back"><span class="token keyword">public</span> <span class="token keyword">interface</span> IComparable {
+    <span class="token keyword">bool</span> Compare(left : <span class="token keyword">obj</span>, right : <span class="token keyword">obj</span>);
+}
+
+<span class="token keyword">public</span> <span class="token keyword">class</span> MyCustomObject : IComparable {
+    
+}
+
+<span class="token keyword">implement</span> MyCustomObject {
+    <span class="token keyword">public</span> <span class="token keyword">bool</span> Compare(left : <span class="token keyword">obj</span>, right : <span class="token keyword">obj</span>) {
+        retur left == right;
+    }
+}
+</code></pre>
 <h2 id="exercices">Exercices</h2>
-<p>1. </p>
+<ol>
+<li>Can you implement more than one interfaces?</li>
+<li>What happens if you implement the same interface twice?</li>
+<li></li>
+</ol>
