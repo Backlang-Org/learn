@@ -69,3 +69,22 @@ The sample above uses a range from 1 to 200 inclusive. That means an array will 
 1. Expplain the difference between a struct and a tuple.
 2. Is it possible to nest tuples?
 3. How much values can hold a tuple?
+
+## Unit Types
+
+A unit type can gives a literal a typed unit. So if you want to ensure that you are working with the right number unit you can use it. 
+
+To define a simple unit type:
+
+```ebnf
+<unit_def> ::= "unit" <name> ";"
+```
+
+A simple example for a definition and usage of an unit type:
+```back
+unit seconds;
+
+public static func main() {
+    let time = 12<seconds>;
+}
+```
