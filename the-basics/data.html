@@ -42,3 +42,15 @@ print(p.Y);
 <li>Is it possible to nest tuples?</li>
 <li>How much values can hold a tuple?</li>
 </ol>
+<h2 id="unit-types">Unit Types</h2>
+<p>A unit type can gives a literal a typed unit. So if you want to ensure that you are working with the right number unit you can use it. </p>
+<p>To define a simple unit type:</p>
+<pre><code class="language-ebnf">&lt;<span class="token rule">unit_def</span>> ::<span class="token operator">=</span> <span class="token string">"unit"</span> &lt;<span class="token rule">name</span>> <span class="token string">";"</span>
+</code></pre>
+<p>A simple example for a definition and usage of an unit type:</p>
+<pre><code class="language-back">unit seconds;
+
+<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">func</span> main() {
+    <span class="token keyword">let</span> time = <span class="token number">12</span>&lt;seconds>;
+}
+</code></pre>
