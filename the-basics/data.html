@@ -54,3 +54,6 @@ print(p.Y);
     <span class="token keyword">let</span> time = <span class="token number">12</span>&lt;seconds>;
 }
 </code></pre>
+<h2 id="implicit-casts">Implicit Casts</h2>
+<p>Sometimes you want to pass number values of a specific type that is smaller than the required type. Backlang allows you to use those values by an implicit cast. For example: you can use a i32 value if a variable has the type i64. As long there are the same kind of type. </p>
+<p>You can also write a custom operator overload to make your custom types implicit castable.</p>
