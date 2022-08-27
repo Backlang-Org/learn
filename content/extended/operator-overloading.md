@@ -22,6 +22,8 @@ Operator Overloading gives you the ability to write prettier code. Instead of wr
 | Arithmetic | + - * / % | add sub mul div mod                 |
 | Bitwise    | ^ & \|    | exclusive_or bitwise_and bitwise_or |
 
+You can also overload the `implicit` operator to make your type implicit castable. The argument is the value to cast from and the return value is the result.
+
 Overloaded operators are functions with the `operator` modifier and the name has to be one of the list above.
 
 Here is a simple example of a `Point` struct.
