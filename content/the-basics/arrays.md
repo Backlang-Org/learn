@@ -39,4 +39,4 @@ let element = matrix[0, 0];
 
 ## Exercices
 
-1. 
+1. Declare an array of all 10 prime numbers and print it to the console.
