@@ -1,6 +1,6 @@
 ## Ranges
 
-A range represents a range of numbers or in some contexts a range of types. A range has a lover and a upper bound.
+A range represents a range of numbers or in some contexts a range of types. A range has a lower and a upper bound.
 
 ```back
 let range = 1..200;
