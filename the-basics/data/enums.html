@@ -1,0 +1,15 @@
+<h1 id="enumerations">Enumerations</h1>
+<p>An enumeration can give a specific range of numbers a name.</p>
+<p>The structure of an enumeration:</p>
+<pre><code class="language-ebnf">&lt;<span class="token rule">enum_value</span>> ::<span class="token operator">=</span> &lt;<span class="token rule">number</span>>
+&lt;<span class="token rule">enum_member</span>> ::<span class="token operator">=</span> &lt;<span class="token rule">name</span>> <span class="token punctuation">(</span><span class="token string">"="</span> &lt;<span class="token rule">enum_value</span>><span class="token punctuation">)</span>?
+&lt;<span class="token rule">enum_declaration</span>> ::<span class="token operator">=</span> &lt;<span class="token rule">modifiers</span>> <span class="token string">"enum"</span> &lt;<span class="token rule">name</span>> <span class="token string">"{"</span> &lt;<span class="token rule">enum_member</span>> <span class="token string">"}"</span>
+</code></pre>
+<p>A simple example:</p>
+<pre><code class="language-back"><span class="token keyword">public</span> <span class="token keyword">enum</span> ConsoleColor {
+    Red = <span class="token number">0</span>,
+    Green = <span class="token number">1</span>,
+    Blue = <span class="token number">2</span>
+}
+</code></pre>
+<p>If you leave out the value the compiler assigns the value automaticly based on the index.</p>
