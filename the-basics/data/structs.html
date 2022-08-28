@@ -1,0 +1,23 @@
+<h2 id="structs">Structs</h2>
+<h3 id="declaring-structs">Declaring structs</h3>
+<p>A struct is something like a wrapper for different values. It is a valuetype and allocated on the stack (.Net, it can differe for other backends). A struct can only have values. </p>
+<p>The syntactic structure of a struct:</p>
+<pre><code class="language-ebnf">&lt;<span class="token rule">struct_value</span>> ::<span class="token operator">=</span> <span class="token string">"let"</span> &lt;<span class="token rule">name</span>> <span class="token string">":"</span> &lt;<span class="token rule">typename</span>> <span class="token string">";"</span>
+&lt;<span class="token rule">struct_declaration</span>> ::<span class="token operator">=</span> &lt;<span class="token rule">modifier</span>>? <span class="token string">"struct"</span> &lt;<span class="token rule">name</span>> <span class="token string">"{"</span> &lt;<span class="token rule">struct_value</span>><span class="token operator">*</span> <span class="token string">"}"</span>
+</code></pre>
+<p>For the struct an automatic constructor will be generated to init all fields.</p>
+<p>A simple example:</p>
+<pre><code class="language-back"><span class="token keyword">public</span> <span class="token keyword">struct</span> Point {
+    <span class="token keyword">let</span> X : <span class="token keyword">i32</span>;
+    <span class="token keyword">let</span> Y : <span class="token keyword">i32</span>;
+}
+</code></pre>
+<h3 id="working-with-structs">Working with structs</h3>
+<p>To create an instance of a struct you have to call the constructor. </p>
+<pre><code class="language-back"><span class="token keyword">let</span> p = Point::new(<span class="token number">5</span>, <span class="token number">8</span>);
+</code></pre>
+<p>The code above creates a new instance of the struct <code>Point</code> and calls the constructor to initialize the field <code>X</code> with 5 and the field <code>Y</code> with 8.</p>
+<p>To pass a specific field to a function for example you can use the <code>.</code>-operator.</p>
+<pre><code class="language-back">print(p.X);
+print(p.Y);
+</code></pre>
