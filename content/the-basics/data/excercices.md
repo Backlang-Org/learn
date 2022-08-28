@@ -1,6 +1,6 @@
 ## Exercices
 
-1. Expplain the difference between a struct and a tuple.
+1. Explain the difference between a struct and a tuple.
 2. Is it possible to nest tuples?
 3. How much values can hold a tuple?
 4. Can a `char` implicit casted to an `i16`?
