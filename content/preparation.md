@@ -12,7 +12,7 @@ To verify if you have installed the right runtime use `dotnet --version`
 
 ## 2. Tooling
 
-To have an easier start install the Backlang-Manager `dotnet tool install --global Backlang-Manager`. This application can easily install the backlang sdk, templates and the vscode extension for you. For installing the complete toolset `backlang install --with-extension`
+To have an easier start install the Backlang-Manager `dotnet tool install --global Backlang-Manager`. This application can easily install the backlang sdk, templates and the vscode extension for you. To run the manager type `backlang` in the terminal.
 
 > 💡 To Install the sdk using the manager you need admin rights and it only works currently on windows.
 
