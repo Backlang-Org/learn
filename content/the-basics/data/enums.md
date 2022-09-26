@@ -21,3 +21,9 @@ public enum ConsoleColor {
 ```
 
 If you leave out the value the compiler assigns the value automaticly based on the index.
+
+Exercises
+
+1. Declare an enum for describing the sex and write a `Person` class with the sex field.
+2. For what can enum be used for?
+3. Which values can hold an enum?
