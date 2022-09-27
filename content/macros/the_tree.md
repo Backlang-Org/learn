@@ -28,7 +28,7 @@ The `quote` macro expand code to its actual tree. So you can use it to figure ou
 2. Translate this code snippet to the actual tree:
 
 ```back
-public function main() {
+public func main() {
     let userInput = System.Console::ReadLine();
 
     if userInput == ":q" {
