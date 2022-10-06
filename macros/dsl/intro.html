@@ -1,0 +1,22 @@
+<h1 id="writing-a-domain-specific-language-with-macros">Writing a Domain Specific Language with macros</h1>
+<p>A domain specific language is a language besides the general purpose for specific domains eg. SQL, HTML, ...</p>
+<p>Backlang supports a special syntax of macros to use it like language constructs.</p>
+<h2 id="a-basic-example">A Basic Example</h2>
+<p>For now we will write a simple examle to represent an object structure and convert it automaticly to an XML file.</p>
+<p>The DSL looks like this:</p>
+<pre><code class="language-back"><span class="token keyword">func</span> main() {
+    <span class="token keyword">let</span> xmlDoc = xml {
+        settings {
+            general {
+                autoUpdate = <span class="token boolean">true</span>;
+                titlePrefix = <span class="token string">"Sample - "</span>;
+            }
+        }
+    };
+}
+</code></pre>
+<p>The resulting object:</p>
+<pre><code class="language-back"><span class="token keyword">func</span> main() {
+    <span class="token keyword">let</span> xmlDoc = <span class="token string">"&lt;settings>&lt;general>&lt;autoUpdate>true&lt;/autoUpdate>&lt;titlePrefix>Sample - &lt;/titlePrefix>&lt;/general>&lt;/settings>"</span>;
+}
+</code></pre>
