@@ -6,12 +6,12 @@ Backlang supports a special syntax of macros to use it like language constructs.
 
 ## A Basic Example
 
-For now we will write a simple examle to represent an object structure and convert it automaticly to an XML file.
+For now we will write a simple example to represent an object structure and convert it automaticly to a XML file.
 
 The DSL looks like this:
 
 ```back
-func main() {
+public static func main() {
     let xmlDoc = xml {
         settings {
             general {
@@ -25,7 +25,7 @@ func main() {
 
 The resulting object:
 ```back
-func main() {
+public static func main() {
     let xmlDoc = "<settings><general><autoUpdate>true</autoUpdate><titlePrefix>Sample - </titlePrefix></general></settings>";
 }
 ```

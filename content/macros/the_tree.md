@@ -23,12 +23,12 @@ The `quote` macro expand code to its actual tree. So you can use it to figure ou
 1. If you have an expression `42`. What tree will be used?
     [ ] #uint(42)
     [ ] #literal(42)
-    [ ] #int32(42)
+    [ ] #Int32(42)
 
 2. Translate this code snippet to the actual tree:
 
 ```back
-public func main() {
+public static func main() {
     let userInput = System.Console::ReadLine();
 
     if userInput == ":q" {
