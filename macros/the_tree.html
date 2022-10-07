@@ -12,12 +12,12 @@ The <code>quote</code> macro expand code to its actual tree. So you can use it t
 <li><p>If you have an expression <code>42</code>. What tree will be used?
  [ ] #uint(42)
  [ ] #literal(42)
- [ ] #int32(42)</p>
+ [ ] #Int32(42)</p>
 </li>
 <li><p>Translate this code snippet to the actual tree:</p>
 </li>
 </ol>
-<pre><code class="language-back"><span class="token keyword">public</span> <span class="token keyword">func</span> main() {
+<pre><code class="language-back"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">func</span> main() {
     <span class="token keyword">let</span> userInput = System.Console::ReadLine();
 
     <span class="token keyword">if</span> userInput == <span class="token string">":q"</span> {
