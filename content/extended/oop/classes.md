@@ -1,6 +1,6 @@
 # Classes
 
-A class is like a template for objects and classes can inherit from each other to represent a hierarchical structure. Classes can also have an implement block to append functions. These functions are called `member functions`. If a function is not in an implement block it is called `free function`. All Properties/Fields/Methods are inheritet from the base class. An `abstract` function has to be implemented by the inherentor but a `virtual` function can be overriden by the inherentor. To use a class it has to be fully implemented, that means that all abstract members have to be implemented.
+A class is like a template for objects and classes can inherit from each other to represent a hierarchical structure. Classes can also have an implement block to append functions. These functions are called `member functions`. If a function is not in an implement block it is called `free function`. All Properties/Fields/Methods are inherited from the base class. An `abstract` function has to be implemented by the inherentor but a `virtual` function can be overriden by the inherentor. To use a class it has to be fully implemented, that means that all abstract members have to be defined.
 
 > 💡 You can only inherit from one base class but you can implement as many interfaces as you want. See [Interfaces](/oop/interfaces).
 
@@ -57,11 +57,32 @@ public static func main() {
 }
 ```
 
-As from the example above you can see that we create an immutable instance of `Dog` and set it to the variable `animal`. We can check if an instance is of a specific type with the `is` keyword which returns a boolean.
+As from the example above you can see that we create an immutable instance of `Dog` and set it to the variable `animal`. We can check if an instance is of a specific type with the `is` operator which returns a boolean.
 So, if the instance created is of type `Dog` we print a specific message to the console otherwise we print an error message.
+
+## The implement construct
+The `implement` block seperates data from functionality. So if you want to add functions to a type you can use the implement block. This language feature can also be used to extend existing types from other assemblys. This are called `extension functions`.
+
+The structure of an implement block:
+```ebnf
+<typeOrTypeRange> ::= <typename> | <typename> ".." <typeOrTypeRange> | <typename> "," <typeOrTypeTange>
+<implement> ::= "implement" <typeOrTypeRange> <functionBlock>
+```
+
+The implement block can also be used to save code. If you use a typerange instead a typename all functions will be expanded to all types of the range. To use the expanded type in the function you can use the `SELF` type.
+
+An example of an expandable implement block:
+```back
+implement u8..u64, string {
+    public static function printValue(src: SELF) {
+        print(src);
+    }
+}
+```
 
 ## Exercices
 
 1. What is the difference between a class and a struct?
 2. Create a class hierarchie for any car brand you know. With the property `color` and one virtual function `GetDescription`.
-3. Create some instances of your classes and call the `GetDescription` member function. Does this print that what you expect?
+3. Create some instances of your classes and call the `GetDescription` member function. Does this print what you expect?
+4. Rewrite the class hierarchie from the sample above with [Discrimated Unions](/extended/unions.md)

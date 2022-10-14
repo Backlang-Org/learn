@@ -48,7 +48,7 @@ implement Point {
 ```back
 public static func main() {
     let p = Point::new(42, 5);
-    let negP = -p;
+    let negP = -(p + p);
 
     print(p);
     print(negP);

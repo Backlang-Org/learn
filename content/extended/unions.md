@@ -23,11 +23,11 @@ public union Color {
 
 ```
 
-The `value` field can be used to convert all color values (RGBA) to a u32 integer without casting. A union allocates memory for the most sized variable type. In this example the whole union will allocate 4 bytes because the biggest type used in the union is u32.
+The `value` field can be used to convert all color values (RGBA) to a u32 integer without casting. An union allocates memory for the most sized variable type. In this example the whole union will allocate 4 bytes because the biggest type used in the union is u32.
 
 ## Discriminated Unions
 
-A discrimated union is a typed union. It can be used to create a hierarchical type structure easily. And Du's are generating a default constructor and a `ToString` method. You will see that discrimated unions saves a lot of lines of code.
+A discrimated union (DU) is a typed union. It can be used to create a hierarchical type structure easily. And Du's are generating a default constructor and a `ToString` method. You will see that discrimated unions are saving a lot of lines of code.
 
 The structure of DU's:
 
