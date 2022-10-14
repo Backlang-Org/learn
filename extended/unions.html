@@ -16,9 +16,9 @@
     <span class="token keyword">let</span> value: <span class="token keyword">u32</span> = <span class="token number">0</span>;
 }
 </code></pre>
-<p>The <code>value</code> field can be used to convert all color values (RGBA) to a u32 integer without casting. A union allocates memory for the most sized variable type. In this example the whole union will allocate 4 bytes because the biggest type used in the union is u32.</p>
+<p>The <code>value</code> field can be used to convert all color values (RGBA) to a u32 integer without casting. An union allocates memory for the most sized variable type. In this example the whole union will allocate 4 bytes because the biggest type used in the union is u32.</p>
 <h2 id="discriminated-unions">Discriminated Unions</h2>
-<p>A discrimated union is a typed union. It can be used to create a hierarchical type structure easily. And Du&#39;s are generating a default constructor and a <code>ToString</code> method. You will see that discrimated unions saves a lot of lines of code.</p>
+<p>A discrimated union (DU) is a typed union. It can be used to create a hierarchical type structure easily. And Du&#39;s are generating a default constructor and a <code>ToString</code> method. You will see that discrimated unions are saving a lot of lines of code.</p>
 <p>The structure of DU&#39;s:</p>
 <pre><code class="language-ebnf">&lt;<span class="token rule">du_prop</span>> ::<span class="token operator">=</span> <span class="token string">"mutable"</span>? &lt;<span class="token rule">name</span>> <span class="token string">":"</span> &lt;<span class="token rule">type</span>>
 &lt;<span class="token rule">du_prop_list</span>> ::<span class="token operator">=</span> &lt;<span class="token rule">du_prop</span>> <span class="token string">","</span> &lt;<span class="token rule">du_prop_list</span>> <span class="token operator">|</span> &lt;<span class="token rule">du_prop</span>>

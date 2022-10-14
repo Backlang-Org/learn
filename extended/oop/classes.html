@@ -1,5 +1,5 @@
 <h1 id="classes">Classes</h1>
-<p>A class is like a template for objects and classes can inherit from each other to represent a hierarchical structure. Classes can also have an implement block to append functions. These functions are called <code>member functions</code>. If a function is not in an implement block it is called <code>free function</code>. All Properties/Fields/Methods are inheritet from the base class. An <code>abstract</code> function has to be implemented by the inherentor but a <code>virtual</code> function can be overriden by the inherentor. To use a class it has to be fully implemented, that means that all abstract members have to be implemented.</p>
+<p>A class is like a template for objects and classes can inherit from each other to represent a hierarchical structure. Classes can also have an implement block to append functions. These functions are called <code>member functions</code>. If a function is not in an implement block it is called <code>free function</code>. All Properties/Fields/Methods are inherited from the base class. An <code>abstract</code> function has to be implemented by the inherentor but a <code>virtual</code> function can be overriden by the inherentor. To use a class it has to be fully implemented, that means that all abstract members have to be defined.</p>
 <blockquote>
 <p>💡 You can only inherit from one base class but you can implement as many interfaces as you want. See <a href="/oop/interfaces">Interfaces</a>.</p>
 </blockquote>
@@ -50,11 +50,26 @@
     }
 }
 </code></pre>
-<p>As from the example above you can see that we create an immutable instance of <code>Dog</code> and set it to the variable <code>animal</code>. We can check if an instance is of a specific type with the <code>is</code> keyword which returns a boolean.
+<p>As from the example above you can see that we create an immutable instance of <code>Dog</code> and set it to the variable <code>animal</code>. We can check if an instance is of a specific type with the <code>is</code> operator which returns a boolean.
 So, if the instance created is of type <code>Dog</code> we print a specific message to the console otherwise we print an error message.</p>
+<h2 id="the-implement-construct">The implement construct</h2>
+<p>The <code>implement</code> block seperates data from functionality. So if you want to add functions to a type you can use the implement block. This language feature can also be used to extend existing types from other assemblys. This are called <code>extension functions</code>.</p>
+<p>The structure of an implement block:</p>
+<pre><code class="language-ebnf">&lt;<span class="token rule">typeOrTypeRange</span>> ::<span class="token operator">=</span> &lt;<span class="token rule">typename</span>> <span class="token operator">|</span> &lt;<span class="token rule">typename</span>> <span class="token string">".."</span> &lt;<span class="token rule">typeOrTypeRange</span>> <span class="token operator">|</span> &lt;<span class="token rule">typename</span>> <span class="token string">","</span> &lt;<span class="token rule">typeOrTypeTange</span>>
+&lt;<span class="token rule">implement</span>> ::<span class="token operator">=</span> <span class="token string">"implement"</span> &lt;<span class="token rule">typeOrTypeRange</span>> &lt;<span class="token rule">functionBlock</span>>
+</code></pre>
+<p>The implement block can also be used to save code. If you use a typerange instead a typename all functions will be expanded to all types of the range. To use the expanded type in the function you can use the <code>SELF</code> type.</p>
+<p>An example of an expandable implement block:</p>
+<pre><code class="language-back"><span class="token keyword">implement</span> <span class="token keyword">u8</span>..<span class="token keyword">u64</span>, <span class="token keyword">string</span> {
+    <span class="token keyword">public</span> <span class="token keyword">static</span> function printValue(src: SELF) {
+        print(src);
+    }
+}
+</code></pre>
 <h2 id="exercices">Exercices</h2>
 <ol>
 <li>What is the difference between a class and a struct?</li>
 <li>Create a class hierarchie for any car brand you know. With the property <code>color</code> and one virtual function <code>GetDescription</code>.</li>
-<li>Create some instances of your classes and call the <code>GetDescription</code> member function. Does this print that what you expect?</li>
+<li>Create some instances of your classes and call the <code>GetDescription</code> member function. Does this print what you expect?</li>
+<li>Rewrite the class hierarchie from the sample above with <a href="/extended/unions.md">Discrimated Unions</a></li>
 </ol>
