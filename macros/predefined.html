@@ -2,52 +2,49 @@
 <table>
 <thead>
 <tr>
-<th align="center">Implemented Since</th>
 <th>Name</th>
 <th>Description</th>
 <th>Example</th>
 </tr>
 </thead>
 <tbody><tr>
-<td align="center">1.0</td>
 <td>nameof</td>
 <td>Converts the &#39;key&#39; name component of an expression to a string</td>
 <td><pre>nameof(A.B<C>(D)) == "B"</td>
 </tr>
 <tr>
-<td align="center">1.0</td>
 <td>concatId</td>
 <td>Concats 2 Ids to a new Id</td>
 <td><pre>concatId(a, b) == ab</td>
 </tr>
 <tr>
-<td align="center">1.0</td>
 <td>$variableName</td>
 <td>Expands a variable (scoped property)</td>
 <td><pre>if $target == "dotnet" {}</pre></td>
 </tr>
 <tr>
-<td align="center">1.0</td>
 <td>generateId()</td>
 <td>Generates a new Id</td>
 <td><pre>generateId() == a0</td>
 </tr>
 <tr>
-<td align="center">1.0</td>
 <td>target</td>
 <td>Compile code in body only if the given compilation target is same</td>
 <td><pre>target(dotnet) { print("only run if target is .net"); }</td>
 </tr>
 <tr>
-<td align="center">1.0</td>
 <td>quote</td>
 <td>Generates the tree of the given code</td>
 <td><pre>quote { print("Hi"); }</td>
 </tr>
 <tr>
-<td align="center">❌</td>
 <td>unroll</td>
 <td>This macro "pastes" the same body for every entry in the given list</td>
 <td><pre>#unroll(it, 1..3) { print("It also has: " + it); }</pre> converts to <pre>print("It also has: 1"); print("It also has: 2"); print("It also has: 3");</td>
+</tr>
+<tr>
+<td>todo</td>
+<td>Add a warning to memorize todos. Can be used to generate a todo list</td>
+<td><pre>@todo("Implement some new functionality") <br /> func nothing() {}</pre></td>
 </tr>
 </tbody></table>
