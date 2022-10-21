@@ -8,4 +8,12 @@ public static func main() {
 }
 ```
 
+or a shorter alternative using the main macro:
+
+```back
+main {
+    print("hello world");
+}
+```
+
 A program has to have an entry point method called `main`.
