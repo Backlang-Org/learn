@@ -61,3 +61,7 @@ public static func main() {
 2. Which operators cannot be overloaded?
 3. Why you don't want to overload the memory operators on a `Vector2` struct?
 4. What should operators definitly not do and why?
+
+And now, a _quiz_:
+
+{{#quiz ../../quizzes/operator-overloading.toml}}

@@ -54,3 +54,7 @@ for x in 12..1 {
 
 1. Write a program to calculate the factorial of a given number with a while loop.
 2. Would it be possible to solve this problem with a for loop?
+
+And now, a _quiz_:
+
+{{#quiz ../../quizzes/loops.toml}}

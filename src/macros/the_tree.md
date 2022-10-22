@@ -18,6 +18,10 @@ Calling Conventions of Targets:
 Literals are automaticly typed by the parser. A type is a call and a literal node as argument. So the number `42` will be treated as `#Int32(42)`. Modifiers like `public` are attributes on a node.
 The `quote` macro expand code to its actual tree. So you can use it to figure out a tree of a certain language construct.
 
+And now, a _quiz_:
+
+{{#quiz ../../quizzes/tree.toml}}
+
 ## Exercices
 
 1. If you have an expression `42`. What tree will be used?

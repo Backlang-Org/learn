@@ -40,3 +40,7 @@ let element = matrix[0, 0];
 ## Exercises
 
 1. Declare an array containing the first ten prime numbers and print it to the console.
+
+And now, a _quiz_:
+
+{{#quiz ../../quizzes/arrays.toml}}

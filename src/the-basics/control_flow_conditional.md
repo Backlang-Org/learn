@@ -44,3 +44,7 @@ Given the following expression: `x and !b`.
 
 1. Is this valid code?
 2. Under which conditions is this code semantically incorrect?
+
+And now, a _quiz_:
+
+{{#quiz ../../quizzes/conditions.toml}}

@@ -62,4 +62,7 @@ switch element {
 ## Exercices
 
 1. Why you would use an switch-statement instead of an if-statement?
-2. 
+
+And now, a _quiz_:
+
+{{#quiz ../../quizzes/switch.toml}}

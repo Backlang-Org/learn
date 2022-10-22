@@ -1,0 +1,8 @@
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "What is the difference between `char` and `string`?"
+prompt.choices = [
+  "A `char` can't be casted to an integer, a `string` can",
+  "A `char` is only 1 character and a string is a list of characters",
+]
+answer.answer = 1
