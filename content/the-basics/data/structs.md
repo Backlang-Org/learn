@@ -1,7 +1,7 @@
 ## Structs
 
 ### Declaring structs
-A struct is something like a wrapper for different values. It is a valuetype and allocated on the stack (.Net, it can differe for other backends). A struct can only have values. 
+A struct is something like a wrapper for different values. It is a value type and allocated on the stack (in .NET, this can differ for other backends). A struct can only contain values. 
 
 The syntactic structure of a struct:
 ```ebnf
@@ -9,7 +9,7 @@ The syntactic structure of a struct:
 <struct_declaration> ::= <modifier>? "struct" <name> "{" <struct_value>* "}"
 ```
 
-For the struct an automatic constructor will be generated to init all fields.
+An automatic constructor will be generated for the struct to initialize all fields.
 
 A simple example:
 ```back
@@ -29,7 +29,7 @@ let p = Point::new(5, 8);
 
 The code above creates a new instance of the struct `Point` and calls the constructor to initialize the field `X` with 5 and the field `Y` with 8.
 
-To pass a specific field to a function for example you can use the `.`-operator.
+To index an instance of a struct by one of its fields, use the `.`-operator.
 
 ```back
 print(p.X);
