@@ -123,10 +123,13 @@
                         </button>
                         <ul id="theme-list" class="theme-popup" aria-label="Themes" role="menu">
                             <li role="none"><button role="menuitem" class="theme" id="light">{{ theme_option "Light" }}</button></li>
-                            <li role="none"><button role="menuitem" class="theme" id="rust">{{ theme_option "Rust" }}</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="latte">{{ theme_option "Latte" }}</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="frappe">{{ theme_option "Frappé" }}</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="macchiato">{{ theme_option "Macchiato" }}</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="coal">{{ theme_option "Coal" }}</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="navy">{{ theme_option "Navy" }}</button></li>
                             <li role="none"><button role="menuitem" class="theme" id="ayu">{{ theme_option "Ayu" }}</button></li>
+                            <li role="none"><button role="menuitem" class="theme" id="mocha">{{ theme_option "Mocha" }}</button></li>
                         </ul>
                         {{#if search_enabled}}
                         <button id="search-toggle" class="icon-button" type="button" title="Search. (Shortkey: s)" aria-label="Toggle Searchbar" aria-expanded="false" aria-keyshortcuts="S" aria-controls="searchbar">
@@ -285,13 +288,12 @@
 
         <script src="{{ path_to_root }}clipboard.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="{{ path_to_root }}highlight.js" type="text/javascript" charset="utf-8"></script>
-        <!-- Custom JS scripts moved here :) -->
+        <script src="{{ path_to_root }}book.js" type="text/javascript" charset="utf-8"></script>
+
+        <!-- Custom JS scripts -->
         {{#each additional_js}}
         <script type="text/javascript" src="{{ ../path_to_root }}{{this}}"></script>
         {{/each}}
-        <script src="{{ path_to_root }}book.js" type="text/javascript" charset="utf-8"></script>
-
-        <!-- Custom JS scripts were originally here -->
 
         {{#if is_print}}
         {{#if mathjax_support}}
