@@ -11,6 +11,3 @@ F# has really nice features but is less intuitive for C# developers. So I have d
 
 Users can also write inline intrinsics to use runtime features that are not yet available in the language itself (eg. inline-il).
 
-And now, a _quiz_:
-
-{{#quiz ../quizzes/rust-variables.toml}}

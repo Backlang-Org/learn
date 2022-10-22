@@ -86,3 +86,7 @@ implement u8..u64, string {
 2. Create a class hierarchie for any car brand you know. With the property `color` and one virtual function `GetDescription`.
 3. Create some instances of your classes and call the `GetDescription` member function. Does this print what you expect?
 4. Rewrite the class hierarchie from the sample above with [Discrimated Unions](/extended/unions.md)
+
+And now, a _quiz_:
+
+{{#quiz ../../../quizzes/classes.toml}}

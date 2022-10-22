@@ -27,3 +27,7 @@ Exercises
 1. Declare an enum for representing the sex of a person and write a `Person` class with the sex field.
 2. What can enums be used for?
 3. Which values can hold an enum?
+
+And now, a _quiz_:
+
+{{#quiz ../../../quizzes/enums.toml}}

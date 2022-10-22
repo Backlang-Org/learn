@@ -90,3 +90,7 @@ implement Binary {
 1. What is the difference between a union and a discriminated union?
 2. What is the profit of using unions?
 3. What could be an usage screnario of using a discriminated union?
+
+And now, a _quiz_:
+
+{{#quiz ../../quizzes/unions.toml}}

@@ -53,3 +53,7 @@ day = "Tuesday";
     - Why is this not allowed?
     - How can you allow the reassignment of a variables value?
 3. What is the difference between `char` and `string`?
+
+And now, a _quiz_:
+
+{{#quiz ../../quizzes/variables.toml}}

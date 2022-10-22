@@ -31,7 +31,3 @@ public func something_should_pass() {
     assert(true);
 }
 ```
-
-## Exercices
-
-1. 

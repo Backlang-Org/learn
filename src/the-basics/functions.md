@@ -70,4 +70,7 @@ Optional arguments have to be after mandatory arguments.
 
 ## Exercises
 
-1. 
+
+And now, a _quiz_:
+
+{{#quiz ../../quizzes/functions.toml}}

@@ -31,3 +31,7 @@ implement MyCustomObject {
 1. Can you implement more than one interfaces?
 2. What happens if you implement the same interface twice?
 3. Can you make an instance of an interface?
+
+And now, a _quiz_:
+
+{{#quiz ../../../quizzes/interfaces.toml}}
