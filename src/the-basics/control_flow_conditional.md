@@ -26,7 +26,7 @@ If only one statement is given for the body the curly braces can be left out.
 Here is a simple example:
 
 ```back
-public static func main() {
+func main() {
     let isHappy = true;
 
     if isHappy {
@@ -37,13 +37,6 @@ public static func main() {
     }
 }
 ```
-
-## Exercices
-
-Given the following expression: `x and !b`. 
-
-1. Is this valid code?
-2. Under which conditions is this code semantically incorrect?
 
 And now, a _quiz_:
 

@@ -1,8 +1,17 @@
 [[questions]]
 type = "MultipleChoice"
-prompt.prompt = "What is the difference between `char` and `string`?"
+prompt.prompt = "Is `x and !b` valid code?"
 prompt.choices = [
-  "A `char` can't be casted to an integer, a `string` can",
-  "A `char` is only 1 character and a string is a list of characters",
+  "Yes",
+  "No",
+]
+answer.answer = 0
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "When is `x and !b` not valid code?"
+prompt.choices = [
+  "When the variable x is the same type as variable b",
+  "If the type of those variables is not bool or don't has overloaded operators",
 ]
 answer.answer = 1
