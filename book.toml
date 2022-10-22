@@ -1,5 +1,5 @@
 [book]
-authors = ["DasLixou", "Backlang Org"]
+authors = ["DasLixou", "Backlang Org", "furesoft"]
 language = "en"
 multilingual = false
 src = "src"
@@ -10,3 +10,5 @@ additional-js = ["theme/custom-highlight.js"]
 cname = "learn.backlang.org"
 git-repository-url = "https://github.com/Backlang-Org/Backlang"
 edit-url-template = "https://github.com/Backlang-Org/learn/edit/main/{path}"
+
+[preprocessor.quiz]

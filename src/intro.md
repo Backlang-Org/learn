@@ -10,3 +10,7 @@ C# is a really good language but has a lack of code reduction.
 F# has really nice features but is less intuitive for C# developers. So I have decided to build a new language to fill the gap between C# and F#, and have added a macro system for code reduction and the ability to make custom language constructs to hide complex problems in a Domain Specific Language. 
 
 Users can also write inline intrinsics to use runtime features that are not yet available in the language itself (eg. inline-il).
+
+And now, a _quiz_:
+
+{{#quiz ../quizzes/rust-variables.toml}}
