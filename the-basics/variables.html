@@ -1,6 +1,6 @@
 <h1 id="variables">Variables</h1>
 <h2 id="definition">Definition</h2>
-<p>A variable can hold a value. Variables are by default immutable to prevent from changing the value. If you want to change the value later you can declare the variable as mutable with <code>mut</code></p>
+<p>A variable can hold a value. Variables are by default immutable to prevent from changing the value. If you want to change the value later you can declare the variable as mutable with <code>mut</code>.</p>
 <p>The syntatic structure of a variable definition:</p>
 <pre><code class="language-ebnf">&lt;<span class="token rule">name</span>> ::<span class="token operator">=</span> <span class="token punctuation">[</span><span class="token rule">a</span><span class="token operator">-</span><span class="token rule">zA</span><span class="token operator">-</span><span class="token rule">Z_</span><span class="token punctuation">]</span><span class="token punctuation">[</span><span class="token rule">a</span><span class="token operator">-</span><span class="token rule">zA</span><span class="token operator">-</span><span class="token rule">Z0</span><span class="token operator">-</span>9_<span class="token punctuation">]</span>+
 &lt;<span class="token rule">expression</span>> ::<span class="token operator">=</span> &lt;<span class="token rule">literal</span>> <span class="token operator">|</span> <span class="token punctuation">.</span><span class="token punctuation">.</span><span class="token punctuation">.</span>
@@ -9,13 +9,13 @@
 <p>Sample of a variable definition:</p>
 <pre><code class="language-back"><span class="token keyword">let</span> age = <span class="token number">42</span>;
 </code></pre>
-<p>Backlang can automaticly deduce the type of the variable but if you want to specify the type, another example:</p>
+<p>Backlang can automaticly deduce the type of the variable but if you want to specify the type, here is how:</p>
 <pre><code class="language-back"><span class="token keyword">let</span> name: <span class="token keyword">string</span> = <span class="token string">"Bob"</span>;
 </code></pre>
 <p>You can also specify the type by a literal type specifier:</p>
 <pre><code class="language-back"><span class="token keyword">let</span> pi = <span class="token number">3</span>.1451d;
 </code></pre>
-<p>A list of all basic primitive datatypes can you find <a href="/#/learn/primitive-datatypes">here</a>.</p>
+<p>A list of all basic primitive datatypes can be found <a href="/#/learn/primitive-datatypes">here</a>.</p>
 <h2 id="assignments">Assignments</h2>
 <p>You can only assign mutable variables. If you try to change an immutable variable the compiler throws an error.</p>
 <p>The syntactic structure of assignments:</p>
@@ -25,12 +25,12 @@
 <pre><code class="language-back"><span class="token keyword">let</span> <span class="token keyword">mut</span> day = <span class="token string">"Monday"</span>;
 day = <span class="token string">"Tuesday"</span>;
 </code></pre>
-<h2 id="exercices">Exercices</h2>
+<h2 id="exercises">Exercises</h2>
 <ol>
-<li>Declare an immutable variable which stores the value of PI.</li>
-<li>Try to reassign the value to <code>42</code>. <ul>
+<li>Declare an immutable variable which stores the value of pi.</li>
+<li>Try to reassign the value of this to <code>42</code>. <ul>
 <li>Why is this not allowed?</li>
-<li>How can you allow reassign a value?</li>
+<li>How can you allow the reassignment of a variables value?</li>
 </ul>
 </li>
 <li>What is the difference between <code>char</code> and <code>string</code>?</li>

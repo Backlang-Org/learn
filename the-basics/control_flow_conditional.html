@@ -1,7 +1,7 @@
 <h1 id="conditional-control-flow">Conditional Control Flow</h1>
 <p>What would a program be without any decisions? Really boring. There are two kinds of conditional statements available in Backlang, <code>if</code> and <code>switch</code>. But what is a condition and conditional control flow? Let&#39;s figure it out.</p>
 <h2 id="conditions">Conditions</h2>
-<p>A condition resolves always to a value that is <code>true</code> or <code>false</code>. Conditions can be combined with relational operators. Here is a list:</p>
+<p>A condition always evaluates to <code>true</code> or <code>false</code>. Conditions can be combined with relational operators. Here is a list:</p>
 <table>
 <thead>
 <tr>
@@ -23,11 +23,11 @@
 </tr>
 </tbody></table>
 <h2 id="if-statements">If-Statements</h2>
-<p>If-Statements give the possibility of branching the control flow. </p>
+<p>If-statements allow you to brnch the flow of control. </p>
 <p>Here is the syntactic structure of a full if-statement:</p>
 <pre><code class="language-ebnf">&lt;<span class="token rule">if_statement</span>> ::<span class="token operator">=</span> <span class="token string">"if"</span> &lt;<span class="token rule">condition</span>> <span class="token string">"{"</span> &lt;<span class="token rule">trueBody</span>> <span class="token string">"}"</span> <span class="token punctuation">(</span><span class="token string">"else"</span> <span class="token string">"{"</span> &lt;<span class="token rule">falseBody</span>> <span class="token string">"}"</span><span class="token punctuation">)</span>?
 </code></pre>
-<p>If only one statement is given for the body the curly braces can be leaved out.</p>
+<p>If only one statement is given for the body the curly braces can be left out.</p>
 <p>Here is a simple example:</p>
 <pre><code class="language-back"><span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">func</span> main() {
     <span class="token keyword">let</span> isHappy = <span class="token boolean">true</span>;
@@ -41,8 +41,8 @@
 }
 </code></pre>
 <h2 id="exercices">Exercices</h2>
-<p>Given is following expression: <code>x and !b</code>. </p>
+<p>Given the following expression: <code>x and !b</code>. </p>
 <ol>
 <li>Is this valid code?</li>
-<li>On which conditions is this code semantically incorrect?</li>
+<li>Under which conditions is this code semantically incorrect?</li>
 </ol>

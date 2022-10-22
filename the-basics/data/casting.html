@@ -1,6 +1,6 @@
 <h1 id="casting">Casting</h1>
 <h2 id="implicit-casts">Implicit Casts</h2>
-<p>Sometimes you want to pass number values of a specific type that is smaller than the required type. Backlang allows you to use those values by an implicit cast. For example: you can use a i32 value if a variable has the type i64. As long there are the same kind of type. </p>
-<p>You can also write a custom operator overload to make your custom types implicit castable.</p>
+<p>Sometimes you want to pass number values of a specific type that is smaller than the required type. Backlang allows you to use those values by an implicit cast. For example: you can use a i32 value if a variable has the type i64. This can be done so long as the two types are of the same kind, e.g. integer and integer; or float and float.</p>
+<p>You can also write a custom operator overload to make your custom types implicitly castable.</p>
 <h2 id="explicit-casts">Explicit Casts</h2>
-<p>You can always try to cast a value to another type with the <code>as</code> operator. If it not succeeds it will return <code>none</code>.</p>
+<p>You can always try to cast a value to another type with the <code>as</code> operator. If this is not successful it will return <code>none</code>.</p>
