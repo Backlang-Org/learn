@@ -11,4 +11,5 @@ cname = "learn.backlang.org"
 git-repository-url = "https://github.com/Backlang-Org/Backlang"
 edit-url-template = "https://github.com/Backlang-Org/learn/edit/main/{path}"
 
+[preprocessor.footnote]
 [preprocessor.quiz]
