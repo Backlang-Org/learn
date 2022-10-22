@@ -1,6 +1,6 @@
 ## Unit Of Measure Types
 
-A unit of measure type can gives a literal a typed unit. So if you want to ensure that you are working with the right number unit you can use it. 
+A unit of measure type can gives a literal a typed unit. So you can use it to ensure that you are working with the right number unit. 
 
 To define a simple unit type:
 

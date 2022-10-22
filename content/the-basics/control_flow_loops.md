@@ -4,7 +4,7 @@ Now I will introduce you the concept of loops. A loop can repeat code. There are
 
 ## While Loops
 
-The while loop is a head controlled loop. That means that the body will only be executed if the condition is true, otherwise the body will be skipped.
+The while loop is a head-controlled loop. That means that the body will only be executed if the condition is true, otherwise the body will be skipped.
 
 Here is the syntactic structure:
 ```ebnf
@@ -26,7 +26,7 @@ public static func main() {
 
 ## For-Loop
 
-A for loop can be used to iterate over arrays/iterators. To repeat code a certain amount of iterations you can use ranges. 
+A for loop can be used to iterate over arrays/iterators. To repeat code for a given number of iterations you can use ranges. 
 
 The definition of a for-loop:
 
@@ -42,7 +42,7 @@ for x in 1..12 {
 }
 ```
 
-You can also use ranges to reverese the index:
+You can also use ranges to reverse the direction of the loop:
 
 ```back
 for x in 12..1 {
@@ -52,5 +52,5 @@ for x in 12..1 {
 
 ## Exercices
 
-1. Write a program to calculate the factorial number with a while loop.
-2. Would be a for loop for this problem possible?
+1. Write a program to calculate the factorial of a given number with a while loop.
+2. Would it be possible to solve this problem with a for loop?

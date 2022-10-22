@@ -1,6 +1,6 @@
 # Accessibility
 
-Backlang can protect members from being used by others. This accessibility attributes are called modifiers. Here is a list of all modifiers:
+Backlang can protect code elements from external access. The keywords controlling accessibility are called modifiers. Here is a list of all modifiers:
 
 | Modifier  | Accessibility Rule                   |
 |-----------|--------------------------------------|

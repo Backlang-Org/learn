@@ -1,9 +1,9 @@
 # Functions
 
 
-A piece of code can be combined as function. Functions can expect parameters and can return a value. The simplest function is the `println` function to print a message to the outputstream (for example the console).
+A piece of code can be combined as a function. A function can expect parameters and can return a value. The simplest function is the `println` function to print a message to the output stream (for example the console).
 
-The syntactic structure:
+The syntactic structure of a function:
 ```ebnf
 <parameter> ::= <name> ":" <typename> ("=" <expression>)?
 <parameter_list> ::= <parameter> || <parameter> "," <parameter_list>
@@ -17,7 +17,7 @@ func printHello() {
 }
 ```
 
-When you want to pass arguments trough a function, do it like so
+When you want to pass arguments to a function, do it like this:
 
 ```back
 func greet(name: string) {
@@ -27,7 +27,7 @@ func greet(name: string) {
 greet("Bob");
 ```
 
-For a return type, you put an arrow before the block of code
+To give a return type, you put an arrow before the block of code:
 
 ```back
 func getMyLovedNumber() -> i32 {
@@ -38,7 +38,7 @@ let lovedNumber = getMyLovedNumber(); // this will be 2
 ```
 
 
-For default values, just define them in the head of the function like so
+For default values, just define them in the head of the function like so:
 
 ```back
 private static func greet(name: string = "Oh no it's nameless :c") -> none {
@@ -48,7 +48,7 @@ private static func greet(name: string = "Oh no it's nameless :c") -> none {
 greet(); // this will be "Morning, Oh no it's nameless :c!"
 ```
 
-Generic Arguments will be defined with the `where` keyword after the arguments
+Generic arguments will be defined with the `where` keyword after the arguments:
 
 ```back
 private static func myCoolFunction<T>(smth: T) where T: GameObject -> T {
@@ -56,7 +56,7 @@ private static func myCoolFunction<T>(smth: T) where T: GameObject -> T {
 }
 ```
 
-When you want to skip a default variable of a function, do it this way
+When you want to skip a default variable of a function, do it this way:
 
 ```back
 func greet(name : string, thisIsUseless: bool = false) {
@@ -66,8 +66,8 @@ func greet(name : string, thisIsUseless: bool = false) {
 greet(name = "Peter"); // we skip the bool "thisIsUseless" and jump directly to the name argument
 ```
 
-Optional arguments has to be after normal arguments
+Optional arguments have to be after mandatory arguments.
 
-## Exercices
+## Exercises
 
 1. 
