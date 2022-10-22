@@ -184,13 +184,8 @@ code --install-extension furesoft.back --force
 </blockquote>
 <div style="break-before: page; page-break-before: always;"></div><p>In this section you will learn the absolute basic knowledge needed to write simple applications with Backlang.</p>
 <p>To write something out to the console:</p>
-<pre><code class="language-back">public static func main() {
+<pre><code class="language-back">func main() {
     print(&quot;Hello World&quot;);
-}
-</code></pre>
-<p>... or a shorter alternative using the main macro:</p>
-<pre><code class="language-back">main {
-    print(&quot;hello world&quot;);
 }
 </code></pre>
 <p>A program has to have an entry point method called <code>main</code>.</p>
@@ -233,7 +228,7 @@ day = &quot;Tuesday&quot;;
 <li>What is the difference between <code>char</code> and <code>string</code>?</li>
 </ol>
 <p>And now, a <em>quiz</em>:</p>
-<div class="quiz-placeholder" data-quiz-name="variables"  data-quiz-questions="{&quot;questions&quot;:[{&quot;type&quot;:&quot;MultipleChoice&quot;,&quot;answer&quot;:{&quot;answer&quot;:1},&quot;prompt&quot;:{&quot;choices&quot;:[&quot;A `char` can't be casted to an integer, a `string` can&quot;,&quot;A `char` is only 1 character and a string is a list of characters&quot;],&quot;prompt&quot;:&quot;What is the difference between `char` and `string`?&quot;}}]}"  data-quiz-commit-hash="8b85ede3f09e5bc067940e190caffa7606c1a93e
+<div class="quiz-placeholder" data-quiz-name="variables"  data-quiz-questions="{&quot;questions&quot;:[{&quot;type&quot;:&quot;MultipleChoice&quot;,&quot;answer&quot;:{&quot;answer&quot;:1},&quot;prompt&quot;:{&quot;choices&quot;:[&quot;A `char` can't be casted to an integer, a `string` can&quot;,&quot;A `char` is only 1 character and a string is a list of characters&quot;],&quot;prompt&quot;:&quot;What is the difference between `char` and `string`?&quot;}}]}"  data-quiz-commit-hash="5919cbe665e2ff498a3a70e37e9be7402ef2bc61
 " ></div><script type="text/javascript" src="mdbook-quiz/embed.js"></script>
 <link rel="stylesheet" type="text/css" href="mdbook-quiz/embed.css"><div style="break-before: page; page-break-before: always;"></div><h1 id="functions"><a class="header" href="#functions">Functions</a></h1>
 <p>A piece of code can be combined as a function. A function can expect parameters and can return a value. The simplest function is the <code>println</code> function to print a message to the output stream (for example the console).</p>
@@ -283,7 +278,7 @@ greet(name = &quot;Peter&quot;); // we skip the bool &quot;thisIsUseless&quot; a
 <p>Optional arguments have to be after mandatory arguments.</p>
 <h2 id="exercises-1"><a class="header" href="#exercises-1">Exercises</a></h2>
 <p>And now, a <em>quiz</em>:</p>
-<div class="quiz-placeholder" data-quiz-name="functions"  data-quiz-questions="{&quot;questions&quot;:[{&quot;type&quot;:&quot;MultipleChoice&quot;,&quot;answer&quot;:{&quot;answer&quot;:1},&quot;prompt&quot;:{&quot;choices&quot;:[&quot;A `char` can't be casted to an integer, a `string` can&quot;,&quot;A `char` is only 1 character and a string is a list of characters&quot;],&quot;prompt&quot;:&quot;What is the difference between `char` and `string`?&quot;}}]}"  data-quiz-commit-hash="8b85ede3f09e5bc067940e190caffa7606c1a93e
+<div class="quiz-placeholder" data-quiz-name="functions"  data-quiz-questions="{&quot;questions&quot;:[{&quot;type&quot;:&quot;MultipleChoice&quot;,&quot;answer&quot;:{&quot;answer&quot;:1},&quot;prompt&quot;:{&quot;choices&quot;:[&quot;A `char` can't be casted to an integer, a `string` can&quot;,&quot;A `char` is only 1 character and a string is a list of characters&quot;],&quot;prompt&quot;:&quot;What is the difference between `char` and `string`?&quot;}}]}"  data-quiz-commit-hash="5919cbe665e2ff498a3a70e37e9be7402ef2bc61
 " ></div><script type="text/javascript" src="mdbook-quiz/embed.js"></script>
 <link rel="stylesheet" type="text/css" href="mdbook-quiz/embed.css"><div style="break-before: page; page-break-before: always;"></div><h1 id="conditional-control-flow"><a class="header" href="#conditional-control-flow">Conditional Control Flow</a></h1>
 <p>What would a program be without any decisions? Really boring. There are two kinds of conditional statements available in Backlang, <code>if</code> and <code>switch</code>. But what is a condition and conditional control flow? Let's figure it out.</p>
@@ -320,7 +315,7 @@ greet(name = &quot;Peter&quot;); // we skip the bool &quot;thisIsUseless&quot; a
 <li>Under which conditions is this code semantically incorrect?</li>
 </ol>
 <p>And now, a <em>quiz</em>:</p>
-<div class="quiz-placeholder" data-quiz-name="conditions"  data-quiz-questions="{&quot;questions&quot;:[{&quot;type&quot;:&quot;MultipleChoice&quot;,&quot;answer&quot;:{&quot;answer&quot;:1},&quot;prompt&quot;:{&quot;choices&quot;:[&quot;A `char` can't be casted to an integer, a `string` can&quot;,&quot;A `char` is only 1 character and a string is a list of characters&quot;],&quot;prompt&quot;:&quot;What is the difference between `char` and `string`?&quot;}}]}"  data-quiz-commit-hash="8b85ede3f09e5bc067940e190caffa7606c1a93e
+<div class="quiz-placeholder" data-quiz-name="conditions"  data-quiz-questions="{&quot;questions&quot;:[{&quot;type&quot;:&quot;MultipleChoice&quot;,&quot;answer&quot;:{&quot;answer&quot;:1},&quot;prompt&quot;:{&quot;choices&quot;:[&quot;A `char` can't be casted to an integer, a `string` can&quot;,&quot;A `char` is only 1 character and a string is a list of characters&quot;],&quot;prompt&quot;:&quot;What is the difference between `char` and `string`?&quot;}}]}"  data-quiz-commit-hash="5919cbe665e2ff498a3a70e37e9be7402ef2bc61
 " ></div><script type="text/javascript" src="mdbook-quiz/embed.js"></script>
 <link rel="stylesheet" type="text/css" href="mdbook-quiz/embed.css"><div style="break-before: page; page-break-before: always;"></div><h1 id="loops"><a class="header" href="#loops">Loops</a></h1>
 <p>Now I will introduce you the concept of loops. A loop can repeat code. There are several kind of loops but we will start with the simplest loop - The <code>while</code> loop.</p>
@@ -330,7 +325,7 @@ greet(name = &quot;Peter&quot;); // we skip the bool &quot;thisIsUseless&quot; a
 <pre><code class="language-ebnf">&lt;while_loop&gt; ::= &quot;while&quot; &lt;condition&gt; &quot;{&quot; &lt;body&gt; &quot;}&quot;
 </code></pre>
 <p>Here is a simple example:</p>
-<pre><code class="language-back">public static func main() {
+<pre><code class="language-back">func main() {
     let mut number = 42;
 
     while number &gt; 0 { //only execute if number is greater than zero
@@ -361,7 +356,7 @@ greet(name = &quot;Peter&quot;); // we skip the bool &quot;thisIsUseless&quot; a
 <li>Would it be possible to solve this problem with a for loop?</li>
 </ol>
 <p>And now, a <em>quiz</em>:</p>
-<div class="quiz-placeholder" data-quiz-name="loops"  data-quiz-questions="{&quot;questions&quot;:[{&quot;type&quot;:&quot;MultipleChoice&quot;,&quot;answer&quot;:{&quot;answer&quot;:1},&quot;prompt&quot;:{&quot;choices&quot;:[&quot;A `char` can't be casted to an integer, a `string` can&quot;,&quot;A `char` is only 1 character and a string is a list of characters&quot;],&quot;prompt&quot;:&quot;What is the difference between `char` and `string`?&quot;}}]}"  data-quiz-commit-hash="8b85ede3f09e5bc067940e190caffa7606c1a93e
+<div class="quiz-placeholder" data-quiz-name="loops"  data-quiz-questions="{&quot;questions&quot;:[{&quot;type&quot;:&quot;MultipleChoice&quot;,&quot;answer&quot;:{&quot;answer&quot;:1},&quot;prompt&quot;:{&quot;choices&quot;:[&quot;A `char` can't be casted to an integer, a `string` can&quot;,&quot;A `char` is only 1 character and a string is a list of characters&quot;],&quot;prompt&quot;:&quot;What is the difference between `char` and `string`?&quot;}}]}"  data-quiz-commit-hash="5919cbe665e2ff498a3a70e37e9be7402ef2bc61
 " ></div><script type="text/javascript" src="mdbook-quiz/embed.js"></script>
 <link rel="stylesheet" type="text/css" href="mdbook-quiz/embed.css"><div style="break-before: page; page-break-before: always;"></div><h1 id="arrays"><a class="header" href="#arrays">Arrays</a></h1>
 <p>An array can hold multiple values of a specific type. The memory must be preallocated.</p>
@@ -389,7 +384,7 @@ let element = matrix[0, 0];
 <li>Declare an array containing the first ten prime numbers and print it to the console.</li>
 </ol>
 <p>And now, a <em>quiz</em>:</p>
-<div class="quiz-placeholder" data-quiz-name="arrays"  data-quiz-questions="{&quot;questions&quot;:[{&quot;type&quot;:&quot;MultipleChoice&quot;,&quot;answer&quot;:{&quot;answer&quot;:1},&quot;prompt&quot;:{&quot;choices&quot;:[&quot;A `char` can't be casted to an integer, a `string` can&quot;,&quot;A `char` is only 1 character and a string is a list of characters&quot;],&quot;prompt&quot;:&quot;What is the difference between `char` and `string`?&quot;}}]}"  data-quiz-commit-hash="8b85ede3f09e5bc067940e190caffa7606c1a93e
+<div class="quiz-placeholder" data-quiz-name="arrays"  data-quiz-questions="{&quot;questions&quot;:[{&quot;type&quot;:&quot;MultipleChoice&quot;,&quot;answer&quot;:{&quot;answer&quot;:1},&quot;prompt&quot;:{&quot;choices&quot;:[&quot;A `char` can't be casted to an integer, a `string` can&quot;,&quot;A `char` is only 1 character and a string is a list of characters&quot;],&quot;prompt&quot;:&quot;What is the difference between `char` and `string`?&quot;}}]}"  data-quiz-commit-hash="5919cbe665e2ff498a3a70e37e9be7402ef2bc61
 " ></div><script type="text/javascript" src="mdbook-quiz/embed.js"></script>
 <link rel="stylesheet" type="text/css" href="mdbook-quiz/embed.css"><div style="break-before: page; page-break-before: always;"></div><h1 id="working-with-data"><a class="header" href="#working-with-data">Working With Data</a></h1>
 <p>In this section you will learn how data can be structured and handled as different types.</p>
@@ -415,7 +410,7 @@ let element = matrix[0, 0];
 <li>Which values can hold an enum?</li>
 </ol>
 <p>And now, a <em>quiz</em>:</p>
-<div class="quiz-placeholder" data-quiz-name="enums"  data-quiz-questions="{&quot;questions&quot;:[{&quot;type&quot;:&quot;MultipleChoice&quot;,&quot;answer&quot;:{&quot;answer&quot;:1},&quot;prompt&quot;:{&quot;choices&quot;:[&quot;A `char` can't be casted to an integer, a `string` can&quot;,&quot;A `char` is only 1 character and a string is a list of characters&quot;],&quot;prompt&quot;:&quot;What is the difference between `char` and `string`?&quot;}}]}"  data-quiz-commit-hash="8b85ede3f09e5bc067940e190caffa7606c1a93e
+<div class="quiz-placeholder" data-quiz-name="enums"  data-quiz-questions="{&quot;questions&quot;:[{&quot;type&quot;:&quot;MultipleChoice&quot;,&quot;answer&quot;:{&quot;answer&quot;:1},&quot;prompt&quot;:{&quot;choices&quot;:[&quot;A `char` can't be casted to an integer, a `string` can&quot;,&quot;A `char` is only 1 character and a string is a list of characters&quot;],&quot;prompt&quot;:&quot;What is the difference between `char` and `string`?&quot;}}]}"  data-quiz-commit-hash="5919cbe665e2ff498a3a70e37e9be7402ef2bc61
 " ></div><script type="text/javascript" src="mdbook-quiz/embed.js"></script>
 <link rel="stylesheet" type="text/css" href="mdbook-quiz/embed.css"><div style="break-before: page; page-break-before: always;"></div><h2 id="structs"><a class="header" href="#structs">Structs</a></h2>
 <h3 id="declaring-structs"><a class="header" href="#declaring-structs">Declaring structs</a></h3>
@@ -481,7 +476,7 @@ public static func main() {
 <li>If you declared a variable with an unit of measure type, could you implicitly cast it to another measure type?</li>
 </ol>
 <p>And now, a <em>quiz</em>:</p>
-<div class="quiz-placeholder" data-quiz-name="data"  data-quiz-questions="{&quot;questions&quot;:[{&quot;type&quot;:&quot;MultipleChoice&quot;,&quot;answer&quot;:{&quot;answer&quot;:1},&quot;prompt&quot;:{&quot;choices&quot;:[&quot;A `char` can't be casted to an integer, a `string` can&quot;,&quot;A `char` is only 1 character and a string is a list of characters&quot;],&quot;prompt&quot;:&quot;What is the difference between `char` and `string`?&quot;}}]}"  data-quiz-commit-hash="8b85ede3f09e5bc067940e190caffa7606c1a93e
+<div class="quiz-placeholder" data-quiz-name="data"  data-quiz-questions="{&quot;questions&quot;:[{&quot;type&quot;:&quot;MultipleChoice&quot;,&quot;answer&quot;:{&quot;answer&quot;:1},&quot;prompt&quot;:{&quot;choices&quot;:[&quot;A `char` can't be casted to an integer, a `string` can&quot;,&quot;A `char` is only 1 character and a string is a list of characters&quot;],&quot;prompt&quot;:&quot;What is the difference between `char` and `string`?&quot;}}]}"  data-quiz-commit-hash="5919cbe665e2ff498a3a70e37e9be7402ef2bc61
 " ></div><script type="text/javascript" src="mdbook-quiz/embed.js"></script>
 <link rel="stylesheet" type="text/css" href="mdbook-quiz/embed.css"><div style="break-before: page; page-break-before: always;"></div><h1 id="primitive-datatypes"><a class="header" href="#primitive-datatypes">Primitive DataTypes</a></h1>
 <blockquote>
@@ -556,7 +551,7 @@ Of course we have a solution for that! The <code>when</code> keyword</p>
 <li>Why you would use an switch-statement instead of an if-statement?</li>
 </ol>
 <p>And now, a <em>quiz</em>:</p>
-<div class="quiz-placeholder" data-quiz-name="switch"  data-quiz-questions="{&quot;questions&quot;:[{&quot;type&quot;:&quot;MultipleChoice&quot;,&quot;answer&quot;:{&quot;answer&quot;:1},&quot;prompt&quot;:{&quot;choices&quot;:[&quot;A `char` can't be casted to an integer, a `string` can&quot;,&quot;A `char` is only 1 character and a string is a list of characters&quot;],&quot;prompt&quot;:&quot;What is the difference between `char` and `string`?&quot;}}]}"  data-quiz-commit-hash="8b85ede3f09e5bc067940e190caffa7606c1a93e
+<div class="quiz-placeholder" data-quiz-name="switch"  data-quiz-questions="{&quot;questions&quot;:[{&quot;type&quot;:&quot;MultipleChoice&quot;,&quot;answer&quot;:{&quot;answer&quot;:1},&quot;prompt&quot;:{&quot;choices&quot;:[&quot;A `char` can't be casted to an integer, a `string` can&quot;,&quot;A `char` is only 1 character and a string is a list of characters&quot;],&quot;prompt&quot;:&quot;What is the difference between `char` and `string`?&quot;}}]}"  data-quiz-commit-hash="5919cbe665e2ff498a3a70e37e9be7402ef2bc61
 " ></div><script type="text/javascript" src="mdbook-quiz/embed.js"></script>
 <link rel="stylesheet" type="text/css" href="mdbook-quiz/embed.css"><div style="break-before: page; page-break-before: always;"></div><h2 id="unions"><a class="header" href="#unions">Unions</a></h2>
 <p>An union can be used to hold a value with different types. Unions can be used to avoid casting.</p>
@@ -635,7 +630,7 @@ implement Binary {
 <li>What could be an usage screnario of using a discriminated union?</li>
 </ol>
 <p>And now, a <em>quiz</em>:</p>
-<div class="quiz-placeholder" data-quiz-name="unions"  data-quiz-questions="{&quot;questions&quot;:[{&quot;type&quot;:&quot;MultipleChoice&quot;,&quot;answer&quot;:{&quot;answer&quot;:1},&quot;prompt&quot;:{&quot;choices&quot;:[&quot;A `char` can't be casted to an integer, a `string` can&quot;,&quot;A `char` is only 1 character and a string is a list of characters&quot;],&quot;prompt&quot;:&quot;What is the difference between `char` and `string`?&quot;}}]}"  data-quiz-commit-hash="8b85ede3f09e5bc067940e190caffa7606c1a93e
+<div class="quiz-placeholder" data-quiz-name="unions"  data-quiz-questions="{&quot;questions&quot;:[{&quot;type&quot;:&quot;MultipleChoice&quot;,&quot;answer&quot;:{&quot;answer&quot;:1},&quot;prompt&quot;:{&quot;choices&quot;:[&quot;A `char` can't be casted to an integer, a `string` can&quot;,&quot;A `char` is only 1 character and a string is a list of characters&quot;],&quot;prompt&quot;:&quot;What is the difference between `char` and `string`?&quot;}}]}"  data-quiz-commit-hash="5919cbe665e2ff498a3a70e37e9be7402ef2bc61
 " ></div><script type="text/javascript" src="mdbook-quiz/embed.js"></script>
 <link rel="stylesheet" type="text/css" href="mdbook-quiz/embed.css"><div style="break-before: page; page-break-before: always;"></div><h1 id="operator-overloading"><a class="header" href="#operator-overloading">Operator Overloading</a></h1>
 <p>Operator Overloading gives you the ability to write prettier code. Instead of writing functions you write operators.</p>
@@ -675,7 +670,7 @@ implement Point {
     }
 }
 </code></pre>
-<pre><code class="language-back">public static func main() {
+<pre><code class="language-back">func main() {
     let p = Point::new(42, 5);
     let negP = -(p + p);
 
@@ -691,7 +686,7 @@ implement Point {
 <li>What should operators definitly not do and why?</li>
 </ol>
 <p>And now, a <em>quiz</em>:</p>
-<div class="quiz-placeholder" data-quiz-name="operator-overloading"  data-quiz-questions="{&quot;questions&quot;:[{&quot;type&quot;:&quot;MultipleChoice&quot;,&quot;answer&quot;:{&quot;answer&quot;:1},&quot;prompt&quot;:{&quot;choices&quot;:[&quot;A `char` can't be casted to an integer, a `string` can&quot;,&quot;A `char` is only 1 character and a string is a list of characters&quot;],&quot;prompt&quot;:&quot;What is the difference between `char` and `string`?&quot;}}]}"  data-quiz-commit-hash="8b85ede3f09e5bc067940e190caffa7606c1a93e
+<div class="quiz-placeholder" data-quiz-name="operator-overloading"  data-quiz-questions="{&quot;questions&quot;:[{&quot;type&quot;:&quot;MultipleChoice&quot;,&quot;answer&quot;:{&quot;answer&quot;:1},&quot;prompt&quot;:{&quot;choices&quot;:[&quot;A `char` can't be casted to an integer, a `string` can&quot;,&quot;A `char` is only 1 character and a string is a list of characters&quot;],&quot;prompt&quot;:&quot;What is the difference between `char` and `string`?&quot;}}]}"  data-quiz-commit-hash="5919cbe665e2ff498a3a70e37e9be7402ef2bc61
 " ></div><script type="text/javascript" src="mdbook-quiz/embed.js"></script>
 <link rel="stylesheet" type="text/css" href="mdbook-quiz/embed.css"><div style="break-before: page; page-break-before: always;"></div><h1 id="object-orientated-programming"><a class="header" href="#object-orientated-programming">Object Orientated Programming</a></h1>
 <p>Object Orientated Programming is a paradigm to form code like the world is. A class is a template that can be reused to create objects. An object is a specific instance of a class, for example a Dog class and a myDog object.</p>
@@ -771,7 +766,7 @@ So, if the instance created is of type <code>Dog</code> we print a specific mess
 <li>Rewrite the class hierarchie from the sample above with <a href="extended/oop//extended/unions.html">Discrimated Unions</a></li>
 </ol>
 <p>And now, a <em>quiz</em>:</p>
-<div class="quiz-placeholder" data-quiz-name="classes"  data-quiz-questions="{&quot;questions&quot;:[{&quot;type&quot;:&quot;MultipleChoice&quot;,&quot;answer&quot;:{&quot;answer&quot;:1},&quot;prompt&quot;:{&quot;choices&quot;:[&quot;A `char` can't be casted to an integer, a `string` can&quot;,&quot;A `char` is only 1 character and a string is a list of characters&quot;],&quot;prompt&quot;:&quot;What is the difference between `char` and `string`?&quot;}}]}"  data-quiz-commit-hash="8b85ede3f09e5bc067940e190caffa7606c1a93e
+<div class="quiz-placeholder" data-quiz-name="classes"  data-quiz-questions="{&quot;questions&quot;:[{&quot;type&quot;:&quot;MultipleChoice&quot;,&quot;answer&quot;:{&quot;answer&quot;:1},&quot;prompt&quot;:{&quot;choices&quot;:[&quot;A `char` can't be casted to an integer, a `string` can&quot;,&quot;A `char` is only 1 character and a string is a list of characters&quot;],&quot;prompt&quot;:&quot;What is the difference between `char` and `string`?&quot;}}]}"  data-quiz-commit-hash="5919cbe665e2ff498a3a70e37e9be7402ef2bc61
 " ></div><script type="text/javascript" src="mdbook-quiz/embed.js"></script>
 <link rel="stylesheet" type="text/css" href="mdbook-quiz/embed.css"><div style="break-before: page; page-break-before: always;"></div><h1 id="interfaces"><a class="header" href="#interfaces">Interfaces</a></h1>
 <p>An interface describes a contract between different objects. If a class implements an interface the instanciator knows that all members are implemented. You can also inherit from other interfaces to combine many interfaces into one name. Interface names should start with an <code>I</code>.</p>
@@ -801,7 +796,7 @@ implement MyCustomObject {
 <li>Can you make an instance of an interface?</li>
 </ol>
 <p>And now, a <em>quiz</em>:</p>
-<div class="quiz-placeholder" data-quiz-name="interfaces"  data-quiz-questions="{&quot;questions&quot;:[{&quot;type&quot;:&quot;MultipleChoice&quot;,&quot;answer&quot;:{&quot;answer&quot;:1},&quot;prompt&quot;:{&quot;choices&quot;:[&quot;A `char` can't be casted to an integer, a `string` can&quot;,&quot;A `char` is only 1 character and a string is a list of characters&quot;],&quot;prompt&quot;:&quot;What is the difference between `char` and `string`?&quot;}}]}"  data-quiz-commit-hash="8b85ede3f09e5bc067940e190caffa7606c1a93e
+<div class="quiz-placeholder" data-quiz-name="interfaces"  data-quiz-questions="{&quot;questions&quot;:[{&quot;type&quot;:&quot;MultipleChoice&quot;,&quot;answer&quot;:{&quot;answer&quot;:1},&quot;prompt&quot;:{&quot;choices&quot;:[&quot;A `char` can't be casted to an integer, a `string` can&quot;,&quot;A `char` is only 1 character and a string is a list of characters&quot;],&quot;prompt&quot;:&quot;What is the difference between `char` and `string`?&quot;}}]}"  data-quiz-commit-hash="5919cbe665e2ff498a3a70e37e9be7402ef2bc61
 " ></div><script type="text/javascript" src="mdbook-quiz/embed.js"></script>
 <link rel="stylesheet" type="text/css" href="mdbook-quiz/embed.css"><div style="break-before: page; page-break-before: always;"></div><h1 id="macros"><a class="header" href="#macros">Macros</a></h1>
 <p>A macro is a function which is called at compile time and replaces the macro-call with a new sub-tree.
@@ -844,7 +839,7 @@ quote;
 <p>Literals are automaticly typed by the parser. A type is a call and a literal node as argument. So the number <code>42</code> will be treated as <code>#Int32(42)</code>. Modifiers like <code>public</code> are attributes on a node.
 The <code>quote</code> macro expand code to its actual tree. So you can use it to figure out a tree of a certain language construct.</p>
 <p>And now, a <em>quiz</em>:</p>
-<div class="quiz-placeholder" data-quiz-name="tree"  data-quiz-questions="{&quot;questions&quot;:[{&quot;type&quot;:&quot;MultipleChoice&quot;,&quot;answer&quot;:{&quot;answer&quot;:1},&quot;prompt&quot;:{&quot;choices&quot;:[&quot;A `char` can't be casted to an integer, a `string` can&quot;,&quot;A `char` is only 1 character and a string is a list of characters&quot;],&quot;prompt&quot;:&quot;What is the difference between `char` and `string`?&quot;}}]}"  data-quiz-commit-hash="8b85ede3f09e5bc067940e190caffa7606c1a93e
+<div class="quiz-placeholder" data-quiz-name="tree"  data-quiz-questions="{&quot;questions&quot;:[{&quot;type&quot;:&quot;MultipleChoice&quot;,&quot;answer&quot;:{&quot;answer&quot;:1},&quot;prompt&quot;:{&quot;choices&quot;:[&quot;A `char` can't be casted to an integer, a `string` can&quot;,&quot;A `char` is only 1 character and a string is a list of characters&quot;],&quot;prompt&quot;:&quot;What is the difference between `char` and `string`?&quot;}}]}"  data-quiz-commit-hash="5919cbe665e2ff498a3a70e37e9be7402ef2bc61
 " ></div>
 <h2 id="exercices-7"><a class="header" href="#exercices-7">Exercices</a></h2>
 <ol>
@@ -858,7 +853,7 @@ The <code>quote</code> macro expand code to its actual tree. So you can use it t
 <p>Translate this code snippet to the actual tree:</p>
 </li>
 </ol>
-<pre><code class="language-back">public static func main() {
+<pre><code class="language-back">func main() {
     let userInput = System.Console::ReadLine();
 
     if userInput == &quot;:q&quot; {
@@ -900,7 +895,7 @@ macro MyTestMacro(node : LNode, context : IMacroContext) {
 <h2 id="a-basic-example"><a class="header" href="#a-basic-example">A Basic Example</a></h2>
 <p>For now we will write a simple example to represent an object structure and convert it automaticly to a XML file.</p>
 <p>The DSL looks like this:</p>
-<pre><code class="language-back">public static func main() {
+<pre><code class="language-back">func main() {
     let xmlDoc = xml {
         settings {
             general {
