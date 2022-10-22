@@ -2,7 +2,7 @@
 
 ## Definition
 
-A variable can hold a value. Variables are by default immutable to prevent from changing the value. If you want to change the value later you can declare the variable as mutable with `mut`
+A variable can hold a value. Variables are by default immutable to prevent from changing the value. If you want to change the value later you can declare the variable as mutable with `mut`.
 
 The syntatic structure of a variable definition:
 ```ebnf
@@ -17,7 +17,7 @@ Sample of a variable definition:
 let age = 42;
 ```
 
-Backlang can automaticly deduce the type of the variable but if you want to specify the type, another example:
+Backlang can automaticly deduce the type of the variable but if you want to specify the type, here is how:
 
 ```back
 let name: string = "Bob";
@@ -29,7 +29,7 @@ You can also specify the type by a literal type specifier:
 let pi = 3.1451d;
 ```
 
-A list of all basic primitive datatypes can you find [here](/#/learn/primitive-datatypes).
+A list of all basic primitive datatypes can be found [here](/#/learn/primitive-datatypes).
 
 ## Assignments
 
@@ -46,10 +46,10 @@ let mut day = "Monday";
 day = "Tuesday";
 ```
 
-## Exercices
+## Exercises
 
-1. Declare an immutable variable which stores the value of PI.
-2. Try to reassign the value to `42`. 
+1. Declare an immutable variable which stores the value of pi.
+2. Try to reassign the value of this to `42`. 
     - Why is this not allowed?
-    - How can you allow reassign a value?
+    - How can you allow the reassignment of a variables value?
 3. What is the difference between `char` and `string`?
