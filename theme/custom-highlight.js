@@ -1,22 +1,18 @@
 hljs.registerLanguage("back", (hljs) => ({
-  comment: {
-    pattern: /\/\/.*|\/\*[\s\S]*?(?:\*\/|$)/,
-    greedy: true,
+  name: "Backlang",
+  keywords: {
+    keyword:
+      "inline this const global in continue return where type mut import module using as struct class interface let prop get set implement of for switch case break when if else match with while static operator private protected public internal abstract override func macro constructor destructor enum union bitfield default sizeof and or",
+    built_in:
+      "bool char string obj f16 f32 f64 u8 u16 u32 u64 i8 i16 i32 i64 none",
+    literal: "false true",
   },
-  number: /-?\b\d+(?:\.\d+)?(?:e[+-]?\d+)?\b/i,
-  string: {
-    pattern: /(^|[^\\])"(?:\\.|[^\\"\r\n])*"(?!\s*:)/,
-    lookbehind: true,
-    greedy: true,
-  },
-  boolean: /\b(?:false|true)\b/,
-  annotation: {
-    pattern: /@\w*(\([^)]*\))?/,
-    lookbehind: true,
-    alias: "punctuation",
-  },
-  keyword: [
-    /\b(?:inline|this|const|global|in|continue|return|where|type|mut|import|module|using|as|struct|class|interface|let|prop|get|set|implement|of|for|switch|case|break|when|if|else|match|with|while|static|operator|private|protected|public|internal|abstract|override|func|macro|constructor|destructor|enum|union|bitfield|default|sizeof|and|or)\b/,
-    /\b(?:bool|char|string|obj|f(?:16|32|64)|[ui](?:8|16|32|64)|none)\b/,
+  contains: [
+    hljs.COMMENT("//", "$"),
+    hljs.COMMENT("/\\*", "\\*/"),
+    hljs.QUOTE_STRING_MODE,
+    hljs.C_NUMBER_MODE,
   ],
 }));
+
+hljs.initHighlightingOnLoad();
