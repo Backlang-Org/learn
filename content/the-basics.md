@@ -1,6 +1,6 @@
-In this section you will learn the absolute basic knowledge to write simple applications with Backlang.
+In this section you will learn the absolute basic knowledge needed to write simple applications with Backlang.
 
-To write something out to the console
+To write something out to the console:
 
 ```back
 public static func main() {
@@ -8,7 +8,7 @@ public static func main() {
 }
 ```
 
-or a shorter alternative using the main macro:
+... or a shorter alternative using the main macro:
 
 ```back
 main {
