@@ -37,6 +37,6 @@ let matrix : i32[,] = [[0, 1], [1, 0]];
 let element = matrix[0, 0];
 ```
 
-## Exercices
+## Exercises
 
 1. Declare an array containing the first ten prime numbers and print it to the console.
