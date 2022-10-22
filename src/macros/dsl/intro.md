@@ -11,7 +11,7 @@ For now we will write a simple example to represent an object structure and conv
 The DSL looks like this:
 
 ```back
-public static func main() {
+func main() {
     let xmlDoc = xml {
         settings {
             general {

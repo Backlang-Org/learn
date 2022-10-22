@@ -13,7 +13,7 @@ Here is the syntactic structure:
 
 Here is a simple example:
 ```back
-public static func main() {
+func main() {
     let mut number = 42;
 
     while number > 0 { //only execute if number is greater than zero

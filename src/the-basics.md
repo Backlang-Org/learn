@@ -3,16 +3,8 @@ In this section you will learn the absolute basic knowledge needed to write simp
 To write something out to the console:
 
 ```back
-public static func main() {
+func main() {
     print("Hello World");
-}
-```
-
-... or a shorter alternative using the main macro:
-
-```back
-main {
-    print("hello world");
 }
 ```
 

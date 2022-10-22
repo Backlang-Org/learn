@@ -32,7 +32,7 @@ And now, a _quiz_:
 2. Translate this code snippet to the actual tree:
 
 ```back
-public static func main() {
+func main() {
     let userInput = System.Console::ReadLine();
 
     if userInput == ":q" {
