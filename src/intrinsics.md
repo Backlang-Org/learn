@@ -11,4 +11,4 @@ inline(dotnet) {
 }
 ```
 
-A list of available [Dotnet](/#/learn/intrinsics_dotnet) intrinsics
+A list of available [Dotnet](/intrinsics/dotnet.md) intrinsics

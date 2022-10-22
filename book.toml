@@ -1,0 +1,12 @@
+[book]
+authors = ["DasLixou", "Backlang Org"]
+language = "en"
+multilingual = false
+src = "src"
+title = "Learn BackLang"
+
+[output.html]
+additional-js = ["theme/custom-highlight.js"]
+cname = "learn.backlang.org"
+git-repository-url = "https://github.com/Backlang-Org/Backlang"
+edit-url-template = "https://github.com/Backlang-Org/learn/edit/main/{path}"

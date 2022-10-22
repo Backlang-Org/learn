@@ -29,7 +29,7 @@ You can also specify the type by a literal type specifier:
 let pi = 3.1451d;
 ```
 
-A list of all basic primitive datatypes can be found [here](/#/learn/primitive-datatypes).
+A list of all basic primitive datatypes can be found [here](/primitive-datatypes.md).
 
 ## Assignments
 

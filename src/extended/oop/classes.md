@@ -2,7 +2,7 @@
 
 A class is like a template for objects and classes can inherit from each other to represent a hierarchical structure. Classes can also have an implement block to append functions. These functions are called `member functions`. If a function is not in an implement block it is called `free function`. All Properties/Fields/Methods are inherited from the base class. An `abstract` function has to be implemented by the inherentor but a `virtual` function can be overriden by the inherentor. To use a class it has to be fully implemented, that means that all abstract members have to be defined.
 
-> 💡 You can only inherit from one base class but you can implement as many interfaces as you want. See [Interfaces](/oop/interfaces).
+> 💡 You can only inherit from one base class but you can implement as many interfaces as you want. See [Interfaces](/extended/oop/interfaces.md).
 
 The syntax of a class:
 
