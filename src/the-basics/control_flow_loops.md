@@ -19,7 +19,7 @@ public static func main() {
     while number > 0 { //only execute if number is greater than zero
         print(number); //prints the number
 
-        numer = number + 1; //increses number by 1
+        number = number + 1; //increses number by 1
     }
 }
 ```
