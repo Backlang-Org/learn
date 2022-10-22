@@ -4,7 +4,7 @@ What would a program be without any decisions? Really boring. There are two kind
 
 ## Conditions
 
-A condition resolves always to a value that is `true` or `false`. Conditions can be combined with relational operators. Here is a list:
+A condition always evaluates to `true` or `false`. Conditions can be combined with relational operators. Here is a list:
 
 | operator | description                                                                                    |
 |----------|------------------------------------------------------------------------------------------------|
@@ -14,14 +14,14 @@ A condition resolves always to a value that is `true` or `false`. Conditions can
 
 ## If-Statements
 
-If-Statements give the possibility of branching the control flow. 
+If-statements allow you to brnch the flow of control. 
 
 Here is the syntactic structure of a full if-statement:
 ```ebnf
 <if_statement> ::= "if" <condition> "{" <trueBody> "}" ("else" "{" <falseBody> "}")?
 ```
 
-If only one statement is given for the body the curly braces can be leaved out.
+If only one statement is given for the body the curly braces can be left out.
 
 Here is a simple example:
 
@@ -40,7 +40,7 @@ public static func main() {
 
 ## Exercices
 
-Given is following expression: `x and !b`. 
+Given the following expression: `x and !b`. 
 
 1. Is this valid code?
-2. On which conditions is this code semantically incorrect?
+2. Under which conditions is this code semantically incorrect?
