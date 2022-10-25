@@ -46,14 +46,6 @@ let mut day = "Monday";
 day = "Tuesday";
 ```
 
-## Exercises
-
-1. Declare an immutable variable which stores the value of pi.
-2. Try to reassign the value of this to `42`. 
-    - Why is this not allowed?
-    - How can you allow the reassignment of a variables value?
-3. What is the difference between `char` and `string`?
-
 And now, a _quiz_:
 
 {{#quiz ../../quizzes/variables.toml}}

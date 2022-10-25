@@ -6,3 +6,12 @@ prompt.choices = [
   "A `char` is only 1 character and a string is a list of characters",
 ]
 answer.answer = 1
+
+[[questions]]
+type = "MultipleChoice"
+prompt.prompt = "Why you can't reaassign the variable if the declaration has no mut keyword?"
+prompt.choices = [
+  "The variable is not declared correctly",
+  "The variable is not declared as mutable",
+]
+answer.answer = 1
