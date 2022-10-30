@@ -12,7 +12,7 @@ Here a little example:
 
 ```back
 public interface IComparable {
-    Compare(left : obj, right : obj) -> bool;
+    func Compare(left : obj, right : obj) -> bool;
 }
 
 public class MyCustomObject : IComparable {
