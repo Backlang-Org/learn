@@ -21,7 +21,7 @@ public class MyCustomObject : IComparable {
 
 implement MyCustomObject {
     public bool Compare(left : obj, right : obj) {
-        retur left == right;
+        return left == right;
     }
 }
 ```
