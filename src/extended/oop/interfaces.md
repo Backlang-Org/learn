@@ -20,7 +20,7 @@ public class MyCustomObject : IComparable {
 }
 
 implement MyCustomObject {
-    public Compare(left : obj, right : obj) -> bool {
+    public func Compare(left : obj, right : obj) -> bool {
         return left == right;
     }
 }
