@@ -12,7 +12,7 @@ Here a little example:
 
 ```back
 public interface IComparable {
-    bool Compare(left : obj, right : obj);
+    Compare(left : obj, right : obj) -> bool;
 }
 
 public class MyCustomObject : IComparable {
@@ -20,7 +20,7 @@ public class MyCustomObject : IComparable {
 }
 
 implement MyCustomObject {
-    public bool Compare(left : obj, right : obj) {
+    public Compare(left : obj, right : obj) -> bool {
         return left == right;
     }
 }
