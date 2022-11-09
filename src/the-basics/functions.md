@@ -68,6 +68,22 @@ greet(name = "Peter"); // we skip the bool "thisIsUseless" and jump directly to 
 
 Optional arguments have to be after mandatory arguments.
 
+A function can also be overloaded. That means an other function that has the same same but different parameter types.
+
+Here is a simple example:
+
+```back
+func printNumber(num: i32) {
+    print(num);
+}
+
+func printNumber(num: f32) {
+    print(num);
+}
+
+```
+
+
 ## Exercises
 
 
