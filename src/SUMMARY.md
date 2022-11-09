@@ -13,7 +13,7 @@
     - [Enumerations](./the-basics/data/enums.md)
     - [Structs](./the-basics/data/structs.md)
     - [Tuples](./the-basics/data/tuples.md)
-    - [Ranges](./the-basics/data/ranges.md)
+    - [Ranges/Aliases](./the-basics/data/ranges.md)
     - [Unit of Measure Types](./the-basics/data/unit-types.md)
     - [Casting](./the-basics/data/casting.md)
     - [Exercises](./the-basics/data/exercises.md)
