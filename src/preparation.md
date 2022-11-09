@@ -2,7 +2,7 @@
 
 Backlang is integrated to the msbuild eco system and can be installed and used easily. To start with Backlang follow this guide.
 
-## 1. Install DotNet 7 Preview
+## 1. Install DotNet 7
 
 Download the installers of the .NET SDK and runtime for your operating system from the [.NET Download Page](https://dotnet.microsoft.com/en-us/download/dotnet/7.0)
 
@@ -12,11 +12,10 @@ To verify if you have installed the right runtime use `dotnet --version`
 
 ## 2. Tooling
 
-To have an easier start install the Backlang-Manager `dotnet tool install --global Backlang-Manager`. This application can easily install the backlang sdk, templates and the vscode extension for you. To run the manager type `backlang` in the terminal.
+To have an easier start install the Backlang-Manager `dotnet tool install --global Backlang-Manager`. This application can easily install the backlang sdk, templates and the vscode extension for you. To run the manager type `backlang` in the terminal. Backlang source files have the .back file extension.
 
 > 💡 To Install the sdk using the manager you need admin rights and it only works currently on windows.
 
-To have the full tooling experience the source file has to have the `.back` file extension.
 
 Otherwise you can use the following commands:
 
@@ -26,7 +25,6 @@ code --install-extension furesoft.back --force
 ```
 
 > 💡 To Use the sdk without the backlang manager, you have to specifiy the version in the project file of the sdk, eg. `Backlang.NET.SDK/1.0.60`
-
 
 
 ## 3. Building and Running
