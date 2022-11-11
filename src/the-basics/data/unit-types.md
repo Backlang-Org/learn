@@ -13,6 +13,8 @@ A simple example for a definition and usage of an unit type:
 unit seconds;
 
 public static func main() {
-    let time = 12<seconds>;
+    let duration = 12<seconds>;
+    
+    print("The duration is: " + duration); // prints the duration with the unit measurement type 
 }
 ```
