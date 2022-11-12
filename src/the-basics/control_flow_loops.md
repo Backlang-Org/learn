@@ -24,6 +24,15 @@ func main() {
 }
 ```
 
+## Do-While Loops
+
+The do-while loop is a foot-controlled loop. The body will always be executed and stops if the condition is false.
+
+The struture:
+```ebnf
+<do-while> ::= "do" <statements> "while" <condition> ";"
+```
+
 ## For-Loop
 
 A for loop can be used to iterate over arrays/iterators. To repeat code for a given number of iterations you can use ranges. 
