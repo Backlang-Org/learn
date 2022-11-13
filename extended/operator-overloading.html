@@ -166,6 +166,7 @@
 <div class="table-wrapper"><table><thead><tr><th>Kind</th><th>Operators</th><th>Names</th></tr></thead><tbody>
 <tr><td>Arithmetic</td><td>+ - * / %</td><td>add sub mul div mod</td></tr>
 <tr><td>Bitwise</td><td>^ &amp; |</td><td>exclusive_or bitwise_and bitwise_or</td></tr>
+<tr><td>Logical</td><td>== !=</td><td>equality inequality</td></tr>
 </tbody></table>
 </div>
 <p>You can also overload the <code>implicit</code> operator to make your type implicit castable. The argument is the value to cast from and the return value is the result.</p>
@@ -202,7 +203,8 @@ implement Point {
 <li>What should operators definitly not do and why?</li>
 </ol>
 <p>And now, a <em>quiz</em>:</p>
-<div class="quiz-placeholder" data-quiz-name="operator-overloading"  data-quiz-questions="{&quot;questions&quot;:[{&quot;type&quot;:&quot;MultipleChoice&quot;,&quot;answer&quot;:{&quot;answer&quot;:1},&quot;prompt&quot;:{&quot;choices&quot;:[&quot;A `char` can't be casted to an integer, a `string` can&quot;,&quot;A `char` is only 1 character and a string is a list of characters&quot;],&quot;prompt&quot;:&quot;What is the difference between `char` and `string`?&quot;}}]}" ></div><script type="text/javascript" src="mdbook-quiz/embed.js"></script>
+<div class="quiz-placeholder" data-quiz-name="operator-overloading"  data-quiz-questions="{&quot;questions&quot;:[{&quot;type&quot;:&quot;MultipleChoice&quot;,&quot;answer&quot;:{&quot;answer&quot;:1},&quot;prompt&quot;:{&quot;choices&quot;:[&quot;A `char` can't be casted to an integer, a `string` can&quot;,&quot;A `char` is only 1 character and a string is a list of characters&quot;],&quot;prompt&quot;:&quot;What is the difference between `char` and `string`?&quot;}}]}" ></div>
+<script type="text/javascript" src="mdbook-quiz/embed.js"></script>
 <link rel="stylesheet" type="text/css" href="mdbook-quiz/embed.css">
                     </main>
 
