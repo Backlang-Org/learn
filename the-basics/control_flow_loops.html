@@ -171,6 +171,17 @@
 <p>The struture:</p>
 <pre><code class="language-ebnf">&lt;do-while&gt; ::= &quot;do&quot; &lt;statements&gt; &quot;while&quot; &lt;condition&gt; &quot;;&quot;
 </code></pre>
+<p>A simple example:</p>
+<pre><code class="language-back">func main() {
+    let mut input : string = none;
+    do {
+        input = Console::ReadLine();
+
+        print(&quot;echoed $input&quot;);
+    } while input != &quot;exit&quot;;
+}
+</code></pre>
+<p>This sample expects an userinput and write it back only if the user types not <code>exit</code>.</p>
 <h2 id="for-loop"><a class="header" href="#for-loop">For-Loop</a></h2>
 <p>A for loop can be used to iterate over arrays/iterators. To repeat code for a given number of iterations you can use ranges. </p>
 <p>The definition of a for-loop:</p>
