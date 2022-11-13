@@ -21,6 +21,7 @@ Operator Overloading gives you the ability to write prettier code. Instead of wr
 |------------|-----------|-------------------------------------|
 | Arithmetic | + - * / % | add sub mul div mod                 |
 | Bitwise    | ^ & \|    | exclusive_or bitwise_and bitwise_or |
+| Logical    | == !=     | equality inequality                 |
 
 You can also overload the `implicit` operator to make your type implicit castable. The argument is the value to cast from and the return value is the result.
 
