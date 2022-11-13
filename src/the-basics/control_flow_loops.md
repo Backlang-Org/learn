@@ -33,6 +33,21 @@ The struture:
 <do-while> ::= "do" <statements> "while" <condition> ";"
 ```
 
+A simple example:
+
+```back
+func main() {
+    let mut input : string = none;
+    do {
+        input = Console::ReadLine();
+
+        print("echoed $input");
+    } while input != "exit";
+}
+```
+
+This sample expects an userinput and write it back only if the user types not `exit`.
+
 ## For-Loop
 
 A for loop can be used to iterate over arrays/iterators. To repeat code for a given number of iterations you can use ranges. 
