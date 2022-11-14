@@ -45,7 +45,7 @@ public class Kiwi : Bird {
 
 }
 
-public static func main() {
+func main() {
     let animal = Dog::new();
 
     if animal is Dog {
