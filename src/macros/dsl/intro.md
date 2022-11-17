@@ -25,7 +25,7 @@ func main() {
 
 The resulting object:
 ```back
-public static func main() {
+func main() {
     let xmlDoc = "<settings><general><autoUpdate>true</autoUpdate><titlePrefix>Sample - </titlePrefix></general></settings>";
 }
 ```
