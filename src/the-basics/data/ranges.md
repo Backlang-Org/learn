@@ -27,4 +27,4 @@ func main() -> int {
 }
 ```
 
-As you can see in the sample above the alias type can be used as any other type.
+As you can see in the sample above the alias type can be used as if it were a normal integer.
