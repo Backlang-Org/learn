@@ -236,12 +236,24 @@ day = &quot;Tuesday&quot;;
 
 greet(&quot;Bob&quot;);
 </code></pre>
-<p>To give a return type, you put an arrow before the block of code:</p>
+<p>To give a return type, you put an arrow before the block of code. If you don't provide a return type it will be automaticly deduces. If the function has multiple return statements in branches the compiler tries to find the nearest common type except for System.ValueType and System.Object.</p>
 <pre><code class="language-back">func getMyLovedNumber() -&gt; i32 {
     return 2;
 }
 
 let lovedNumber = getMyLovedNumber(); // this will be 2
+</code></pre>
+<p>This sample declares a discriminated union and automaticly deduces the type for the function <code>deducingTest</code>. The return type will be deduces to <code>Expr</code>.</p>
+<pre><code class="language-back">type Expr = | Literal()
+            | Unary();
+
+func deducingTest() {
+    if true {
+        return Unary::new();
+    }
+    
+    return Literal::new();
+}
 </code></pre>
 <p>For default values, just define them in the head of the function like so:</p>
 <pre><code class="language-back">private static func greet(name: string = &quot;Oh no it's nameless :c&quot;) -&gt; none {
