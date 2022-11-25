@@ -27,7 +27,7 @@ func greet(name: string) {
 greet("Bob");
 ```
 
-To give a return type, you put an arrow before the block of code:
+To give a return type, you put an arrow before the block of code. If you don't provide a return type it will be automaticly deduces. If the function has multiple return statements in branches the compiler tries to find the nearest common type except for System.ValueType and System.Object.
 
 ```back
 func getMyLovedNumber() -> i32 {
@@ -35,6 +35,21 @@ func getMyLovedNumber() -> i32 {
 }
 
 let lovedNumber = getMyLovedNumber(); // this will be 2
+```
+
+
+This sample declares a discriminated union and automaticly deduces the type for the function `deducingTest`. The return type will be deduces to `Expr`.
+```back
+type Expr = | Literal()
+            | Unary();
+
+func deducingTest() {
+    if true {
+        return Unary::new();
+    }
+    
+    return Literal::new();
+}
 ```
 
 
