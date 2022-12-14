@@ -1,6 +1,6 @@
 # Introduction
 
-Backlang's main focus is on reducing code duplication and code by context. The macro system allows us to run functionality before compilation or to generate source code on the fly.
+Back's main focus is on reducing code duplication and code by context. The macro system allows us to run functionality before compilation or to generate source code on the fly.
 With macros you can create your own language constructs to hide the complexity of a problem.
 
 

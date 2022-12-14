@@ -17,7 +17,7 @@ Sample of a variable definition:
 let age = 42;
 ```
 
-Backlang can automaticly deduce the type of the variable but if you want to specify the type, here is how:
+Back can automaticly deduce the type of the variable but if you want to specify the type, here is how:
 
 ```back
 let name: string = "Bob";

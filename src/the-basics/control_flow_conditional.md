@@ -1,6 +1,6 @@
 # Conditional Control Flow
 
-What would a program be without any decisions? Really boring. There are two kinds of conditional statements available in Backlang, `if` and `switch`. But what is a condition and conditional control flow? Let's figure it out.
+What would a program be without any decisions? Really boring. There are two kinds of conditional statements available in Back, `if` and `switch`. But what is a condition and conditional control flow? Let's figure it out.
 
 ## Conditions
 

@@ -1,6 +1,6 @@
 # Accessibility
 
-Backlang can protect code elements from external access. The keywords controlling accessibility are called modifiers. Here is a list of all modifiers:
+Back can protect code elements from external access. The keywords controlling accessibility are called modifiers. Here is a list of all modifiers:
 
 | Modifier  | Accessibility Rule                   |
 |-----------|--------------------------------------|
