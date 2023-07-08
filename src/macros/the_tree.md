@@ -41,6 +41,6 @@ func main() {
 }
 ```
 
-3. Translate this tree to valid backlang code:
+3. Translate this tree to valid back code:
 
 `@[mutable] #var(#type(#(@'', #of())), errorCode = #uint64(0));`

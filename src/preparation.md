@@ -1,6 +1,6 @@
 # Preparation
 
-Backlang is integrated to the msbuild eco system and can be installed and used easily. To start with Backlang follow this guide.
+Back is integrated to the msbuild eco system and can be installed and used easily. To start with Back follow this guide.
 
 ## 1. Install DotNet 7
 

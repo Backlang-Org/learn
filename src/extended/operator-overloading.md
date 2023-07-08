@@ -14,6 +14,7 @@ Operator Overloading gives you the ability to write prettier code. Instead of wr
 | Bitwise    | ~         | bitwise_not    |
 | Logical    | !         | logical_not    |
 | Memory     | * &       | deref addrof   |
+| Other      | ?         | unpacking      |
 
 ### Binary
 
