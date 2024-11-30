@@ -1,0 +1,10 @@
+{
+  "plugins": ["edit-link", "quizzes", "exercises", "terminull"],
+  "title": "Backlang",
+  "pluginsConfig": {
+    "edit-link": {
+      "base": "https://github.com/Backlang-Org/learn/edit/main/",
+      "label": "Edit This Page"
+    }
+  }
+}

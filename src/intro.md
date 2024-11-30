@@ -11,3 +11,31 @@ F# has really nice features but is less intuitive for C# developers. So I have d
 
 Users can also write inline intrinsics to use runtime features that are not yet available in the language itself (eg. inline-il).
 
+```term
+gitbook-plugin-terminull$ echo 'hello terminull' # This will print hello terminull
+hello terminull
+```
+
+---
+
+Here's a quiz about Gitbook
+
+|                  | Good | Bad |
+|------------------|------|-----|
+| What is Gitbook? | (x)  | ( ) |
+
+> Gitbook is good
+
+What does Gitbook support?
+- [x] Table-based questions with radio buttons
+- [x] Table-based questions with checkboxes
+- [ ] Telepathy
+- [x] List-based questions with checkboxes
+- [x] List-based questions with radio buttons
+- [ ] Moon-on-a-stick
+
+> Gitbook supports table and list based quiz questions using either radio buttons or checkboxes.
+>
+> Gitbook is not telepathic and does not give you the moon on a stick.
+
+---
