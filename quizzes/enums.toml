@@ -1,9 +1,0 @@
-[[questions]]
-type = "MultipleChoice"
-prompt.prompt = "Which values can hold an enum?"
-prompt.choices = [
-  "Any",
-  "Only `i32`",
-  "Only value types"
-]
-answer.answer = 1

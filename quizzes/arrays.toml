@@ -1,8 +1,0 @@
-[[questions]]
-type = "MultipleChoice"
-prompt.prompt = "What is an array?"
-prompt.choices = [
-  "A List of Items",
-  "A memory block",
-]
-answer.answer = 1
