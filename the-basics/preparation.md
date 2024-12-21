@@ -12,13 +12,13 @@ To verify if you have installed the right runtime use `dotnet --version`
 
 ## 2. Tooling
 
-To have an easier start install `viking` with `dotnet tool install --global viking` in the terminal. This application can easily install plugins, create and build projects. To run viking type `viking` in the terminal. Backlang source files have the .back file extension.
+To have an easier start install `viking` with `dotnet tool install --global viking` in the terminal. This application can easily install plugins, create and build projects. To run viking type `viking` in the terminal. Socordia source files have the .back file extension.
 
 
 To Install other useful resources like templates and the vscode extension:
 
 ```bash
-dotnet new install Backlang.Templates
+dotnet new install Socordia.Templates
 code --install-extension furesoft.back --force
 ```
 

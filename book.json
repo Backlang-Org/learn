@@ -1,9 +1,9 @@
 {
   "plugins": ["edit-link", "quizzes", "exercises", "terminull"],
-  "title": "Backlang",
+  "title": "Socordia",
   "pluginsConfig": {
     "edit-link": {
-      "base": "https://github.com/Backlang-Org/learn/edit/main/",
+      "base": "https://github.com/Socordia-Org/learn/edit/main/",
       "label": "Edit This Page"
     }
   }

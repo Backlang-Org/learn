@@ -194,7 +194,7 @@ Grammar]]></y:Label.Text>
 			<data key="d4">
 				<x:List>
 					<y:Label>
-						<y:Label.Text><![CDATA[Backlang Compiler]]></y:Label.Text>
+						<y:Label.Text><![CDATA[Socordia Compiler]]></y:Label.Text>
 						<y:Label.LayoutParameter>
 							<y:CompositeLabelModelParameter Model="{y:GraphMLReference 2}">
 								<y:CompositeLabelModelParameter.Parameter>
