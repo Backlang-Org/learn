@@ -2,7 +2,7 @@
 
 You can provide directly IL code by using the `inline` block. 
 
-```back
+```sc
 static func main'()
 {
     inline

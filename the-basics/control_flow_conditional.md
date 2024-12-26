@@ -25,7 +25,7 @@ If only one statement is given for the body the curly braces can be left out.
 
 Here is a simple example:
 
-```back
+```sc
 func main() {
     let isHappy = true;
 

@@ -12,7 +12,7 @@ The structure of an enumeration:
 
 A simple example:
 
-```back
+```sc
 public enum ConsoleColor {
     Red = 0,
     Green = 1,

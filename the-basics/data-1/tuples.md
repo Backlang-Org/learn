@@ -4,11 +4,11 @@ A tuple is like an anonymous struct. It can hold values but it doesn't have a na
 
 Here is a simple example:
 
-```back
+```sc
 let myTuple : (i32, bool) = (42, true);
 ```
 
-```back
+```sc
 func doSomething() -> (i32, string) {
     return (1, "Some Error Occured");
 }

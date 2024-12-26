@@ -11,7 +11,7 @@ The syntactic structure of a function:
 ```
 
 A quick example:
-```back
+```sc
 func printHello() {
     println("Hello!");
 }
@@ -19,7 +19,7 @@ func printHello() {
 
 When you want to pass arguments to a function, do it like this:
 
-```back
+```sc
 func greet(name: string) {
     println("Morning, " + name + "!");
 }
@@ -29,7 +29,7 @@ greet("Bob");
 
 To give a return type, you put an arrow before the block of code. If you don't provide a return type it will be automaticly deduces. If the function has multiple return statements in branches the compiler tries to find the nearest common type except for System.ValueType and System.Object.
 
-```back
+```sc
 func getMyLovedNumber(): i32 {
     return 2;
 }
@@ -39,13 +39,13 @@ let lovedNumber = getMyLovedNumber(); // this will be 2
 
 You can also use a shorthand syntax to define a function that directly return its body:
 
-```back
+```sc
 func awnser() => 42;
 ```
 
 
 This sample declares a discriminated union and automaticly deduces the type for the function `deducingTest`. The return type will be deduces to `Expr`.
-```back
+```sc
 type Expr = | Literal()
             | Unary();
 
@@ -61,7 +61,7 @@ func deducingTest() {
 
 For default values, just define them in the head of the function like so:
 
-```back
+```sc
 private static func greet(name: string = "Oh no it's nameless :c") -> none {
     println("Morning, " + name + "!"); 
 }
@@ -71,7 +71,7 @@ greet(); // this will be "Morning, Oh no it's nameless :c!"
 
 Generic arguments will be defined with the `where` keyword after the arguments:
 
-```back
+```sc
 private static func myCoolFunction<T>(smth: T) where T: GameObject :T {
     // code...
 }
@@ -79,7 +79,7 @@ private static func myCoolFunction<T>(smth: T) where T: GameObject :T {
 
 When you want to skip a default variable of a function, do it this way:
 
-```back
+```sc
 func greet(name : string, thisIsUseless: bool = false) {
     println("Morning, " + name + "!"); 
 }
@@ -93,7 +93,7 @@ A function can also be overloaded. That means an other function that has the sam
 
 Here is a simple example:
 
-```back
+```sc
 func printNumber(num: i32) {
     print(num);
 }

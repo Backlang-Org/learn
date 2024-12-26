@@ -2,7 +2,7 @@
 
 A range represents a range of numbers or in some contexts a range of types. A range has a lower and a upper bound.
 
-```back
+```sc
 let range = 1..200;
 ```
 
@@ -19,7 +19,7 @@ The definition:
 
 Example:
 
-```back
+```sc
 using int as i32;
 
 func main() -> int {

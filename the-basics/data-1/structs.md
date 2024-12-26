@@ -12,7 +12,7 @@ The syntactic structure of a struct:
 An automatic constructor will be generated for the struct to initialize all fields.
 
 A simple example:
-```back
+```sc
 public struct Point {
     let X : i32;
     let Y : i32;
@@ -23,7 +23,7 @@ public struct Point {
 
 To create an instance of a struct you have to call the constructor. 
 
-```back
+```sc
 let p = Point::new(5, 8);
 ```
 
@@ -31,7 +31,7 @@ The code above creates a new instance of the struct `Point` and calls the constr
 
 To index an instance of a struct by one of its fields, use the `.`-operator.
 
-```back
+```sc
 print(p.X);
 print(p.Y);
 ```

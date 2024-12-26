@@ -38,7 +38,7 @@ Overloaded operators are functions with the `operator` modifier and the name has
 
 Here is a simple example of a `Point` struct.
 
-```back
+```sc
 public struct Point {
     let X : i32;
     let Y : i32;
@@ -55,7 +55,7 @@ implement Point {
 }
 ```
 
-```back
+```sc
 func main() {
     let p = Point::new(42, 5);
     let negP = -(p + p);

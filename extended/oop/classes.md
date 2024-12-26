@@ -24,7 +24,7 @@ The syntax of a class:
 
 A class instance can be created like a struct with the static `new` function. Here is a little sample of a class hierarchie:
 
-```back
+```sc
 public abstract class Animal {
 
 }
@@ -72,7 +72,7 @@ The structure of an implement block:
 The implement block can also be used to save code. If you use a typerange instead a typename all functions will be expanded to all types of the range. To use the expanded type in the function you can use the `SELF` type.
 
 An example of an expandable implement block:
-```back
+```sc
 implement u8..u64, string {
     public static function printValue(src: SELF) {
         print(src);

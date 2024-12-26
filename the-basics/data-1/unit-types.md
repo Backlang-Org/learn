@@ -9,7 +9,7 @@ To define a simple unit type:
 ```
 
 A simple example for a definition and usage of an unit type:
-```back
+```sc
 unit seconds of i32;
 
 public static func main() {

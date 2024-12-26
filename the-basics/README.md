@@ -4,7 +4,7 @@ In this section you will learn the absolute basic knowledge needed to write simp
 
 To write something out to the console:
 
-```back
+```sc
 func main() {
     print("Hello World");
 }

@@ -15,7 +15,7 @@ Mixins can:
 
 Integrating a mixin is done using the includes keyword. Consider the following example:
 
-```back
+```sc
 public class Point
     includes Equality, Hashing
 {
@@ -26,7 +26,7 @@ public class Point
 
 This code creates a class that implements the IComparable interface, automatically generating equality and inequality operators, as well as overriding the GetHashCode method. Enhanced Mixin Functionality with Arguments Mixins can also be defined with arguments to further specify their behavior:
 
-```back
+```sc
 public class Point
     includes Serialize(ignore_fields: true)
 {

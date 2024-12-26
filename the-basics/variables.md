@@ -13,19 +13,19 @@ The syntatic structure of a variable definition:
 
 Sample of a variable definition:
 
-```back
+```sc
 let age = 42;
 ```
 
 Back can automaticly deduce the type of the variable but if you want to specify the type, here is how:
 
-```back
+```sc
 let name: string = "Bob";
 ```
 
 You can also specify the type by a literal type specifier:
 
-```back
+```sc
 let pi = 3.1451d;
 ```
 
@@ -41,7 +41,7 @@ The syntactic structure of assignments:
 ```
 
 A simple example:
-```back
+```sc
 let mut day = "Monday";
 day = "Tuesday";
 ```

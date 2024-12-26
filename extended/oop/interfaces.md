@@ -10,7 +10,7 @@ The syntax of an interface:
 
 Here a little example:
 
-```back
+```sc
 public interface IComparable {
     func Compare(left : obj, right : obj) -> bool;
 }

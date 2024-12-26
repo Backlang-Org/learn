@@ -12,7 +12,7 @@ Here is the syntactic structure:
 ```
 
 Here is a simple example:
-```back
+```sc
 func main() {
     let mut number = 42;
 
@@ -35,7 +35,7 @@ The struture:
 
 A simple example:
 
-```back
+```sc
 func main() {
     let mut input : string = none;
     do {
@@ -60,7 +60,7 @@ The definition of a for-loop:
 
 A simple example to repeat code:
 
-```back
+```sc
 for x in 1..12 {
     print("index: " + x);
 }
@@ -68,7 +68,7 @@ for x in 1..12 {
 
 You can also use ranges to reverse the direction of the loop:
 
-```back
+```sc
 for x in 12..1 {
     print("index: " + x);
 }

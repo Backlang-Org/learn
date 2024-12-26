@@ -10,7 +10,7 @@ The syntactic structure of an union:
 ```
 
 A color union is a good example:
-```back
+```sc
 
 public union Color {
     let mut R: u8 = 0;
@@ -40,14 +40,14 @@ The structure of DU's:
 
 For example we will create a simple DU for an abstract syntax tree:
 
-```back
+```sc
 public type Expression = | Literal(Value : obj)
                   | Group(Inner : Expression)
                   | Binary(Lhs : Expression, Operator : string, Rhs : Expression);
 ```
 
 The normal equivalent class structure would be:
-```back
+```sc
 public abstract class Expression {
 
 }
