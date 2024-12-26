@@ -5,12 +5,12 @@ A unit of measure type can gives a literal a typed unit. So you can use it to en
 To define a simple unit type:
 
 ```ebnf
-<unit_def> ::= "unit" <name> ";"
+<unit_def> ::= "unit" <name> "of" <primitiveType> ";"
 ```
 
 A simple example for a definition and usage of an unit type:
 ```back
-unit seconds;
+unit seconds of i32;
 
 public static func main() {
     let duration = 12<seconds>;

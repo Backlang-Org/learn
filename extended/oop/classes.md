@@ -19,7 +19,7 @@ The syntax of a class:
 <property> ::= <modifiers> "prop" <name> "{" <get_block> | <get_and_set_block> "}"
 
 <class_members> ::= <field> | <property>
-<class_declaration> ::= <modifiers> "class" <name> (":" <inheritances>) "{" <class_members> "}"
+<class_declaration> ::= <modifiers> "class" <name> (("implements" <inheritances>) | "extends" <typename>)? "{" <class_members> "}"
 ```
 
 A class instance can be created like a struct with the static `new` function. Here is a little sample of a class hierarchie:
@@ -29,19 +29,19 @@ public abstract class Animal {
 
 }
 
-public class Mammal : Animal {
+public class Mammal extends Animal {
 
 }
 
-public class Bird : Animal {
+public class Bird extends Animal {
 
 }
 
-public class Dog : Mammal {
+public class Dog extends Mammal {
 
 }
 
-public class Kiwi : Bird {
+public class Kiwi extends Bird {
 
 }
 
@@ -86,7 +86,3 @@ implement u8..u64, string {
 2. Create a class hierarchie for any car brand you know. With the property `color` and one virtual function `GetDescription`.
 3. Create some instances of your classes and call the `GetDescription` member function. Does this print what you expect?
 4. Rewrite the class hierarchie from the sample above with [Discrimated Unions](/extended/unions.md)
-
-And now, a _quiz_:
-
-{{#quiz ../../../quizzes/classes.toml}}

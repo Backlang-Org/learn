@@ -15,7 +15,7 @@ public interface IComparable {
     func Compare(left : obj, right : obj) -> bool;
 }
 
-public class MyCustomObject : IComparable {
+public class MyCustomObject implements IComparable {
     
 }
 
@@ -31,7 +31,3 @@ implement MyCustomObject {
 1. Can you implement more than one interfaces?
 2. What happens if you implement the same interface twice?
 3. Can you make an instance of an interface?
-
-And now, a _quiz_:
-
-{{#quiz ../../../quizzes/interfaces.toml}}

@@ -24,6 +24,14 @@ Operator Overloading gives you the ability to write prettier code. Instead of wr
 | Bitwise    | ^ & \|    | exclusive_or bitwise_and bitwise_or |
 | Logical    | == !=     | equality inequality                 |
 
+## Operator call syntax
+
+If a type has special member functions they will be treated as operators:
+
+| function | operator | sample              |
+| Add      | +        | myList + "appendix" |
+| Remove   | -        | myList - "appendix" |
+
 You can also overload the `implicit` operator to make your type implicit castable. The argument is the value to cast from and the return value is the result.
 
 Overloaded operators are functions with the `operator` modifier and the name has to be one of the list above.
@@ -63,7 +71,3 @@ func main() {
 2. Which operators cannot be overloaded?
 3. Why you don't want to overload the memory operators on a `Vector2` struct?
 4. What should operators definitly not do and why?
-
-And now, a _quiz_:
-
-{{#quiz ../../quizzes/operator-overloading.toml}}
