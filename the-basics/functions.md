@@ -7,7 +7,7 @@ The syntactic structure of a function:
 ```ebnf
 <parameter> ::= <name> ":" <typename> ("=" <expression>)?
 <parameter_list> ::= <parameter> || <parameter> "," <parameter_list>
-<function_definition> ::= <modifier>? "func" <name> "(" <parameter_list>* ")" ("->" <typename>)? "{" <body> "}"
+<function_definition> ::= <modifier>? "func" <name> "(" <parameter_list>* ")" (":" <typename>)? "{" <body> "}"
 ```
 
 A quick example:
@@ -30,11 +30,17 @@ greet("Bob");
 To give a return type, you put an arrow before the block of code. If you don't provide a return type it will be automaticly deduces. If the function has multiple return statements in branches the compiler tries to find the nearest common type except for System.ValueType and System.Object.
 
 ```back
-func getMyLovedNumber() -> i32 {
+func getMyLovedNumber(): i32 {
     return 2;
 }
 
 let lovedNumber = getMyLovedNumber(); // this will be 2
+```
+
+You can also use a shorthand syntax to define a function that directly return its body:
+
+```back
+func awnser() => 42;
 ```
 
 
@@ -66,7 +72,7 @@ greet(); // this will be "Morning, Oh no it's nameless :c!"
 Generic arguments will be defined with the `where` keyword after the arguments:
 
 ```back
-private static func myCoolFunction<T>(smth: T) where T: GameObject -> T {
+private static func myCoolFunction<T>(smth: T) where T: GameObject :T {
     // code...
 }
 ```
@@ -97,11 +103,3 @@ func printNumber(num: f32) {
 }
 
 ```
-
-
-## Exercises
-
-
-And now, a _quiz_:
-
-{{#quiz ../../quizzes/functions.toml}}
