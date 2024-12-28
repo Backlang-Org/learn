@@ -1,6 +1,6 @@
 # Accessibility
 
-Back can protect code elements from external access. The keywords controlling accessibility are called modifiers. Here is a list of all modifiers:
+Socordia can protect code elements from external access. The keywords controlling accessibility are called modifiers. Here is a list of all modifiers:
 
 | Modifier  | Accessibility Rule                   |
 |-----------|--------------------------------------|
@@ -13,4 +13,4 @@ Back can protect code elements from external access. The keywords controlling ac
 |-----------|---------------------------------------|
 | extern    | The function is implemented somewhere |
 
-If no modifier is specified the default is private.
+If no modifier is specified the default is public. Free functions are static and public by default.
