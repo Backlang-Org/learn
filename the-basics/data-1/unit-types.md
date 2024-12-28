@@ -10,8 +10,8 @@ To define a simple unit type:
 
 A simple example for a definition and usage of an unit type:
 ```sc
-unit seconds of i32;
-unit minutes of i32;
+unit seconds of f32;
+unit minutes of f32;
 
 func main() {
     let duration = 12<seconds>;
