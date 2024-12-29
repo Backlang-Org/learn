@@ -103,3 +103,11 @@ func printNumber(num: f32) {
 }
 
 ```
+
+# Delegate
+
+A delegate declaration is a type safe function pointer.
+
+```ebnf
+<delegateDecl> .= <modifiers> "delegate" <signature> ";"
+```
