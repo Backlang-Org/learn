@@ -1,9 +1,11 @@
 # Functions
 
+## Functions
 
 A piece of code can be combined as a function. A function can expect parameters and can return a value. The simplest function is the `println` function to print a message to the output stream (for example the console).
 
 The syntactic structure of a function:
+
 ```ebnf
 <parameter> ::= <name> ":" <typename> ("=" <expression>)?
 <parameter_list> ::= <parameter> || <parameter> "," <parameter_list>
@@ -11,6 +13,7 @@ The syntactic structure of a function:
 ```
 
 A quick example:
+
 ```sc
 func printHello() {
     println("Hello!");
@@ -27,7 +30,7 @@ func greet(name: string) {
 greet("Bob");
 ```
 
-To give a return type, you put an arrow before the block of code. If you don't provide a return type it will be automaticly deduces. If the function has multiple return statements in branches the compiler tries to find the nearest common type except for System.ValueType and System.Object.
+To give a return type, you put an colon before the block of code. If you don't provide a return type it will be automaticly deduces. If the function has multiple return statements in branches the compiler tries to find the nearest common type except for System.ValueType and System.Object.
 
 ```sc
 func getMyLovedNumber(): i32 {
@@ -43,8 +46,8 @@ You can also use a shorthand syntax to define a function that directly return it
 func awnser() => 42;
 ```
 
-
 This sample declares a discriminated union and automaticly deduces the type for the function `deducingTest`. The return type will be deduces to `Expr`.
+
 ```sc
 type Expr = | Literal()
             | Unary();
@@ -58,11 +61,10 @@ func deducingTest() {
 }
 ```
 
-
 For default values, just define them in the head of the function like so:
 
 ```sc
-private static func greet(name: string = "Oh no it's nameless :c") -> none {
+func greet(name: string = "Oh no it's nameless :c") -> none {
     println("Morning, " + name + "!"); 
 }
 
@@ -104,7 +106,7 @@ func printNumber(num: f32) {
 
 ```
 
-# Delegate
+## Delegate
 
 A delegate declaration is a type safe function pointer.
 

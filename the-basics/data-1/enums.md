@@ -24,10 +24,6 @@ If you leave out the value the compiler assigns the value automatically based on
 
 Exercises
 
-1. Declare an enum for representing the sex of a person and write a `Person` class with the sex field.
+1. Declare an enum for representing the gender of a person and write a `Person` class with a gender field.
 2. What can enums be used for?
 3. Which values can hold an enum?
-
-And now, a _quiz_:
-
-{{#quiz ../../../quizzes/enums.toml}}

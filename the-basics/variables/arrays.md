@@ -3,12 +3,12 @@
 An array can hold multiple values of a specific type. The memory must be preallocated.
 
 The structure of a variable of array type:
+
 ```ebnf
 <array_type> ::= <typename> "[" ","+ "]"
 <expression_list> ::= <expression> "," <expression_list> | <expression>
 <array_expression> ::= "[" <expression_list> "]"
 ```
-
 
 Simple Example:
 
@@ -22,7 +22,7 @@ A value of the array can be accessed though the index operator in square bracket
 print(primes[1]); //access the 2. element
 ```
 
-An item in the array can be also changed, even if the variable that contains it is not mutable. 
+An item in the array can be also changed, even if the variable that contains it is not mutable.
 
 ```sc
 primes[3] = 7;
@@ -40,7 +40,3 @@ let element = matrix[0, 0];
 ## Exercises
 
 1. Declare an array containing the first ten prime numbers and print it to the console.
-
-And now, a _quiz_:
-
-{{#quiz ../../quizzes/arrays.toml}}

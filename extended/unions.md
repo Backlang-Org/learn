@@ -1,8 +1,11 @@
-## Unions
+# Unions
+
+### Unions
 
 An union can be used to hold a value with different types. Unions can be used to avoid casting.
 
 The syntactic structure of an union:
+
 ```ebnf
 <memory_offset> ::= <int_number>
 <union_value> ::= "let" <name> "=" <memory_offset> ";"
@@ -10,6 +13,7 @@ The syntactic structure of an union:
 ```
 
 A color union is a good example:
+
 ```sc
 
 public union Color {
@@ -25,7 +29,7 @@ public union Color {
 
 The `value` field can be used to convert all color values (RGBA) to a u32 integer without casting. An union allocates memory for the most sized variable type. In this example the whole union will allocate 4 bytes because the biggest type used in the union is u32.
 
-## Discriminated Unions
+### Discriminated Unions
 
 A discrimated union (DU) is a typed union. It can be used to create a hierarchical type structure easily. And Du's are generating a default constructor and a `ToString` method. You will see that discrimated unions are saving a lot of lines of code.
 
@@ -47,6 +51,7 @@ public type Expression = | Literal(Value : obj)
 ```
 
 The normal equivalent class structure would be:
+
 ```sc
 public abstract class Expression {
 
@@ -85,12 +90,8 @@ implement Binary {
 }
 ```
 
-## Exercices
+### Exercices
 
 1. What is the difference between a union and a discriminated union?
 2. What is the profit of using unions?
 3. What could be an usage screnario of using a discriminated union?
-
-And now, a _quiz_:
-
-{{#quiz ../../quizzes/unions.toml}}
